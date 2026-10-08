@@ -1,0 +1,19 @@
+[project]
+name = "flight-punctuality-analytics-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Felix Kjellberg", email = "felix.l.kjellberg@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.0.6",
+]
+
+[project.scripts]
+flight-punctuality-analytics-lab = "flight_punctuality_analytics_lab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
