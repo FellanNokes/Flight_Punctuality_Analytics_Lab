@@ -31,4 +31,6 @@ SHOW FUTURE GRANTS IN SCHEMA flights.staging;
 SHOW GRANTS TO ROLE flights_dlt_role;
 SHOW GRANTS TO USER extract_loader;
 
-GRANT ROLE flights_dlt_role TO USER nokes; -- add your own user name here TODO: add Anja and Rikard
+GRANT ROLE flights_dlt_role TO USER nokes;
+GRANT ROLE flights_dlt_role TO USER anja;
+GRANT ROLE flights_dlt_role TO USER rikard;
