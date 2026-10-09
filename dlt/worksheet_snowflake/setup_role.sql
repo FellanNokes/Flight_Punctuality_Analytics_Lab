@@ -17,6 +17,7 @@ GRANT ROLE flights_dlt_role TO USER extract_loader;
 GRANT USAGE ON WAREHOUSE flights_wh TO ROLE flights_dlt_role;
 GRANT USAGE ON DATABASE flights TO ROLE flights_dlt_role;
 GRANT USAGE ON SCHEMA flights.staging TO ROLE flights_dlt_role;
+GRANT CREATE SCHEMA ON DATABASE flights TO ROLE flights_dlt_role;
 GRANT CREATE TABLE ON SCHEMA flights.staging TO ROLE flights_dlt_role;
 
 -- gran CRUD operations to role
