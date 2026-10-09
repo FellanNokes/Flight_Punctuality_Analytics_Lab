@@ -220,4 +220,4 @@ __marimo__/
 .streamlit/secrets.toml
 
 # Local raw data
-data/raw/
+EDA/data/raw/
