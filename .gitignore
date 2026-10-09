@@ -221,3 +221,9 @@ __marimo__/
 
 # Local raw data
 EDA/data/raw/
+
+# dlthub
+.dlt
+setup_user.sql
+setup_service_acc.sql
+test_connect.py
