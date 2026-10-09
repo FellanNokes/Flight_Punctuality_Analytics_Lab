@@ -1,0 +1,1065 @@
+{
+  "to": {
+    "arrivalAirportIata": "MMX",
+    "arrivalAirportIcao": "ESMS",
+    "arrivalAirportSwedish": "Malmö",
+    "arrivalAirportEnglish": "Malmö",
+    "flightArrivalDate": "2026-10-07"
+  },
+  "numberOfFlights": 22,
+  "flights": [
+    {
+      "flightId": "W61219",
+      "departureAirportSwedish": "Cluj Napoca",
+      "departureAirportEnglish": "Cluj Napoca",
+      "airlineOperator": {
+        "iata": "W6",
+        "icao": "WZZ",
+        "name": "Wizz Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T14:10:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "WZZ1219",
+        "flightId": "W61219",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "CLJ",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "LRCL",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK109",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T11:30:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS109",
+        "flightId": "SK109",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK113",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T21:40:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS113",
+        "flightId": "SK113",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK107",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T18:25:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS66T",
+        "flightId": "SK107",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "W64711",
+      "departureAirportSwedish": "Skopje",
+      "departureAirportEnglish": "Skopje",
+      "airlineOperator": {
+        "iata": "W6",
+        "icao": "WZZ",
+        "name": "Wizz Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T06:25:00Z",
+        "estimatedUtc": "2026-10-07T05:51:00Z",
+        "actualUtc": "2026-10-07T05:52:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "PASS",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 07:52",
+        "flightLegStatusEnglish": "Landed 07:52"
+      },
+      "baggage": {
+        "baggageClaimUnit": "2"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "WZZ161",
+        "aircraftRegistration": "HALGI",
+        "flightId": "W64711",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "SKP",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "LWSK",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 07:52",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 07:52",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "SK105",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T07:20:00Z",
+        "estimatedUtc": "2026-10-07T07:25:00Z",
+        "actualUtc": "2026-10-07T07:20:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "5",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 09:20",
+        "flightLegStatusEnglish": "Landed 09:20"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [
+        "KL2934"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS105",
+        "aircraftRegistration": "EISIP",
+        "flightId": "SK105",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 09:20",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 09:20",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FR5696",
+      "departureAirportSwedish": "London STN",
+      "departureAirportEnglish": "London STN",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T08:00:00Z",
+        "estimatedUtc": "2026-10-07T09:34:00Z",
+        "actualUtc": "2026-10-07T10:51:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "PASS",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 12:51",
+        "flightLegStatusEnglish": "Landed 12:51"
+      },
+      "baggage": {
+        "baggageClaimUnit": "2"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR6KP",
+        "aircraftRegistration": "EIHGP",
+        "flightId": "FR5696",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "STN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "EGSS",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 12:51",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 12:51",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "W43439",
+      "departureAirportSwedish": "Cluj Napoca",
+      "departureAirportEnglish": "Cluj Napoca",
+      "airlineOperator": {
+        "iata": "W4",
+        "icao": "WMT",
+        "name": "Wizz Air Malta"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T12:15:00Z",
+        "estimatedUtc": "2026-10-07T11:56:00Z",
+        "actualUtc": "2026-10-07T11:53:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "7",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 13:53",
+        "flightLegStatusEnglish": "Landed 13:53"
+      },
+      "baggage": {
+        "baggageClaimUnit": "2"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "WMT5QF",
+        "aircraftRegistration": "9HWBA",
+        "flightId": "W43439",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "CLJ",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "LRCL",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 13:53",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 13:53",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK2113",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T15:00:00Z",
+        "estimatedUtc": "2026-10-07T14:47:00Z",
+        "actualUtc": "2026-10-07T14:50:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "5",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 16:50",
+        "flightLegStatusEnglish": "Landed 16:50"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [
+        "KL2948"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS2113",
+        "aircraftRegistration": "EISCB",
+        "flightId": "SK2113",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 16:50",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 16:50",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK2111",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T13:25:00Z",
+        "estimatedUtc": "2026-10-07T13:10:00Z",
+        "actualUtc": "2026-10-07T13:12:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "5",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 15:12",
+        "flightLegStatusEnglish": "Landed 15:12"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [
+        "AF3864",
+        "KL2946"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS2111",
+        "aircraftRegistration": "EISIY",
+        "flightId": "SK2111",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 15:12",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 15:12",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FT687",
+      "departureAirportSwedish": "Stockholm BMA",
+      "departureAirportEnglish": "Stockholm BMA",
+      "airlineOperator": {
+        "iata": "FT",
+        "icao": "FT",
+        "name": "FROST Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T19:35:00Z",
+        "estimatedUtc": "2026-10-07T19:39:00Z",
+        "actualUtc": "2026-10-07T19:40:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 21:40",
+        "flightLegStatusEnglish": "Landed 21:40"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FRO687",
+        "aircraftRegistration": "OYFSG",
+        "flightId": "FT687",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "BMA",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSB",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 21:40",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 21:40",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "W67629",
+      "departureAirportSwedish": "Podgorica",
+      "departureAirportEnglish": "Podgorica",
+      "airlineOperator": {
+        "iata": "W6",
+        "icao": "WZZ",
+        "name": "Wizz Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T19:40:00Z",
+        "estimatedUtc": "2026-10-07T19:37:00Z",
+        "actualUtc": "2026-10-07T19:34:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "BUSS",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 21:34",
+        "flightLegStatusEnglish": "Landed 21:34"
+      },
+      "baggage": {
+        "baggageClaimUnit": "2"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "WZZ2QN",
+        "aircraftRegistration": "9HWDJ",
+        "flightId": "W67629",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "TGD",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "LYPG",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 21:34",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 21:34",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "SK125",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T21:00:00Z",
+        "estimatedUtc": "2026-10-07T20:52:00Z",
+        "actualUtc": "2026-10-07T20:53:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "5",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 22:53",
+        "flightLegStatusEnglish": "Landed 22:53"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [
+        "KL2944"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS125",
+        "aircraftRegistration": "EISIV",
+        "flightId": "SK125",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 22:53",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 22:53",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK121",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T17:10:00Z",
+        "estimatedUtc": "2026-10-07T16:56:00Z",
+        "actualUtc": "2026-10-07T17:01:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "5",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 19:01",
+        "flightLegStatusEnglish": "Landed 19:01"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [
+        "KL2942"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS121",
+        "aircraftRegistration": "SEROM",
+        "flightId": "SK121",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 19:01",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 19:01",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "W64155",
+      "departureAirportSwedish": "Belgrad",
+      "departureAirportEnglish": "Belgrade",
+      "airlineOperator": {
+        "iata": "W6",
+        "icao": "WZZ",
+        "name": "Wizz Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T18:25:00Z",
+        "estimatedUtc": "2026-10-07T19:31:00Z",
+        "actualUtc": "2026-10-07T19:31:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "PASS",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 21:31",
+        "flightLegStatusEnglish": "Landed 21:31"
+      },
+      "baggage": {
+        "baggageClaimUnit": "2"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "WZZ2VP",
+        "aircraftRegistration": "HALDT",
+        "flightId": "W64155",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "BEG",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "LYBE",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 21:31",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 21:31",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "FR4385",
+      "departureAirportSwedish": "Zagreb",
+      "departureAirportEnglish": "Zagreb",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T20:20:00Z",
+        "estimatedUtc": "2026-10-07T20:09:00Z",
+        "actualUtc": "2026-10-07T20:07:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "5",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 22:07",
+        "flightLegStatusEnglish": "Landed 22:07"
+      },
+      "baggage": {
+        "baggageClaimUnit": "1"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR308B",
+        "aircraftRegistration": "9HLOR",
+        "flightId": "FR4385",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ZAG",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "LDZA",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 22:07",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 22:07",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FT671",
+      "departureAirportSwedish": "Stockholm BMA",
+      "departureAirportEnglish": "Stockholm BMA",
+      "airlineOperator": {
+        "iata": "FT",
+        "icao": "FT",
+        "name": "FROST Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T07:15:00Z",
+        "estimatedUtc": "2026-10-07T07:19:00Z",
+        "actualUtc": "2026-10-07T07:17:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 09:17",
+        "flightLegStatusEnglish": "Landed 09:17"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FRO671",
+        "aircraftRegistration": "OYFSG",
+        "flightId": "FT671",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "BMA",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSB",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 09:17",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 09:17",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FT673",
+      "departureAirportSwedish": "Stockholm BMA",
+      "departureAirportEnglish": "Stockholm BMA",
+      "airlineOperator": {
+        "iata": "FT",
+        "icao": "FT",
+        "name": "FROST Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T08:20:00Z",
+        "estimatedUtc": "2026-10-07T08:13:00Z",
+        "actualUtc": "2026-10-07T08:14:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 10:14",
+        "flightLegStatusEnglish": "Landed 10:14"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FRO673",
+        "aircraftRegistration": "OYFSF",
+        "flightId": "FT673",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "BMA",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSB",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 10:14",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 10:14",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FT675",
+      "departureAirportSwedish": "Stockholm BMA",
+      "departureAirportEnglish": "Stockholm BMA",
+      "airlineOperator": {
+        "iata": "FT",
+        "icao": "FT",
+        "name": "FROST Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T10:20:00Z",
+        "estimatedUtc": "2026-10-07T10:48:00Z",
+        "actualUtc": "2026-10-07T10:48:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "3",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 12:48",
+        "flightLegStatusEnglish": "Landed 12:48"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FRO675",
+        "aircraftRegistration": "OYFSG",
+        "flightId": "FT675",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "BMA",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSB",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 12:48",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 12:48",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FT679",
+      "departureAirportSwedish": "Stockholm BMA",
+      "departureAirportEnglish": "Stockholm BMA",
+      "airlineOperator": {
+        "iata": "FT",
+        "icao": "FT",
+        "name": "FROST Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T15:05:00Z",
+        "estimatedUtc": "2026-10-07T14:57:00Z",
+        "actualUtc": "2026-10-07T14:57:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 16:57",
+        "flightLegStatusEnglish": "Landed 16:57"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FRO679",
+        "aircraftRegistration": "OYFSF",
+        "flightId": "FT679",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "BMA",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSB",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 16:57",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 16:57",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FT681",
+      "departureAirportSwedish": "Stockholm BMA",
+      "departureAirportEnglish": "Stockholm BMA",
+      "airlineOperator": {
+        "iata": "FT",
+        "icao": "FT",
+        "name": "FROST Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T16:35:00Z",
+        "estimatedUtc": "2026-10-07T16:37:00Z",
+        "actualUtc": "2026-10-07T16:37:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:37",
+        "flightLegStatusEnglish": "Landed 18:37"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FRO681",
+        "aircraftRegistration": "OYFSG",
+        "flightId": "FT681",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "BMA",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSB",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:37",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:37",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FT685",
+      "departureAirportSwedish": "Stockholm BMA",
+      "departureAirportEnglish": "Stockholm BMA",
+      "airlineOperator": {
+        "iata": "FT",
+        "icao": "FT",
+        "name": "FROST Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T18:05:00Z",
+        "estimatedUtc": "2026-10-07T17:59:00Z",
+        "actualUtc": "2026-10-07T18:02:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "3",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 20:02",
+        "flightLegStatusEnglish": "Landed 20:02"
+      },
+      "baggage": {
+        "baggageClaimUnit": "3"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FRO685",
+        "aircraftRegistration": "OYFSF",
+        "flightId": "FT685",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "BMA",
+        "arrivalAirportIata": "MMX",
+        "departureAirportIcao": "ESSB",
+        "arrivalAirportIcao": "ESMS"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 20:02",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 20:02",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    }
+  ]
+}

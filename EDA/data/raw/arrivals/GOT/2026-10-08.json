@@ -1,0 +1,4815 @@
+{
+  "to": {
+    "arrivalAirportIata": "GOT",
+    "arrivalAirportIcao": "ESGG",
+    "arrivalAirportSwedish": "Göteborg",
+    "arrivalAirportEnglish": "Göteborg",
+    "flightArrivalDate": "2026-10-08"
+  },
+  "numberOfFlights": 82,
+  "flights": [
+    {
+      "flightId": "BLX496",
+      "departureAirportSwedish": "Rhodos",
+      "departureAirportEnglish": "Rhodes",
+      "airlineOperator": {
+        "iata": "BLX",
+        "icao": "BLX",
+        "name": "Tui Fly Nordic"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T00:45:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BLX496",
+        "flightId": "BLX496",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "RHO",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LGRP",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "LH2430",
+      "departureAirportSwedish": "München",
+      "departureAirportEnglish": "Munich",
+      "airlineOperator": {
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:50:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "DLH1AC",
+        "flightId": "LH2430",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "MUC",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR6748",
+      "departureAirportSwedish": "Budapest",
+      "departureAirportEnglish": "Budapest",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T12:40:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR373X",
+        "flightId": "FR6748",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "BUD",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LHBP",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "BA790",
+      "departureAirportSwedish": "London LHR",
+      "departureAirportEnglish": "London LHR",
+      "airlineOperator": {
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T17:15:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BAW790E",
+        "flightId": "BA790",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "LHR",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EGLL",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "FR8718",
+      "departureAirportSwedish": "Milano MXP",
+      "departureAirportEnglish": "Milan MXP",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T17:15:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR8718",
+        "flightId": "FR8718",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "MXP",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LIMC",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR4376",
+      "departureAirportSwedish": "Palma",
+      "departureAirportEnglish": "Palma",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T17:25:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR655V",
+        "flightId": "FR4376",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "PMI",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LEPA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "BT121",
+      "departureAirportSwedish": "Riga",
+      "departureAirportEnglish": "Riga",
+      "airlineOperator": {
+        "iata": "BT",
+        "icao": "BTI",
+        "name": "Air Baltic"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T05:40:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BTI12H",
+        "flightId": "BT121",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "RIX",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EVRA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "TK1797",
+      "departureAirportSwedish": "Istanbul IST",
+      "departureAirportEnglish": "Istanbul IST",
+      "airlineOperator": {
+        "iata": "TK",
+        "icao": "THY",
+        "name": "Turkish Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T07:20:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "THY9XN",
+        "flightId": "TK1797",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "IST",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LTFM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "PC1295",
+      "departureAirportSwedish": "Istanbul SAW",
+      "departureAirportEnglish": "Istanbul SAW",
+      "airlineOperator": {
+        "iata": "PC",
+        "icao": "PGT",
+        "name": "Pegasus Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T11:35:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "PGT1295",
+        "flightId": "PC1295",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "SAW",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LTFJ",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "SK167",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T19:15:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {
+        "baggageClaimUnit": ""
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS35T",
+        "flightId": "SK167",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK7952",
+      "departureAirportSwedish": "Rhodos",
+      "departureAirportEnglish": "Rhodes",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T22:55:00Z",
+        "estimatedUtc": "2026-10-07T22:46:00Z",
+        "actualUtc": "2026-10-07T22:47:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "19",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 00:47",
+        "flightLegStatusEnglish": "Landed 00:47"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-07T23:13:00Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-07T23:01:16Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS7952",
+        "aircraftRegistration": "EISIJ",
+        "flightId": "SK7952",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "RHO",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LGRP",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "First bag on belt",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Landed 00:47",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Första bagage",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Landat 00:47",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "BLX496",
+      "departureAirportSwedish": "Rhodos",
+      "departureAirportEnglish": "Rhodes",
+      "airlineOperator": {
+        "iata": "BLX",
+        "icao": "BLX",
+        "name": "Tui Fly Nordic"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T22:50:00Z",
+        "estimatedUtc": "2026-10-07T22:49:00Z",
+        "actualUtc": "2026-10-07T22:55:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "21A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 00:55",
+        "flightLegStatusEnglish": "Landed 00:55"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-07T23:20:17Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-07T23:13:19Z",
+        "lastBagUtc": "2026-10-07T23:21:42Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BLX496",
+        "aircraftRegistration": "SERND",
+        "flightId": "BLX496",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "RHO",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LGRP",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 00:55",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 00:55",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "DK1805",
+      "departureAirportSwedish": "Rhodos",
+      "departureAirportEnglish": "Rhodes",
+      "airlineOperator": {
+        "iata": "DK",
+        "icao": "VKG",
+        "name": "Sunclass Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T00:45:00Z",
+        "estimatedUtc": "2026-10-08T00:41:00Z",
+        "actualUtc": "2026-10-08T00:46:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "21A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 02:46",
+        "flightLegStatusEnglish": "Landed 02:46"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T01:07:04Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T01:01:35Z",
+        "lastBagUtc": "2026-10-08T01:20:00Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "VKG805",
+        "aircraftRegistration": "OYTCE",
+        "flightId": "DK1805",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "RHO",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LGRP",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 02:46",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 02:46",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR3697",
+      "departureAirportSwedish": "Sarajevo",
+      "departureAirportEnglish": "Sarajevo",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T22:35:00Z",
+        "estimatedUtc": "2026-10-07T22:47:00Z",
+        "actualUtc": "2026-10-07T22:44:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "23",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 00:44",
+        "flightLegStatusEnglish": "Landed 00:44"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-07T23:06:53Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-07T23:04:52Z",
+        "lastBagUtc": "2026-10-07T23:07:50Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR605L",
+        "aircraftRegistration": "9HVVC",
+        "flightId": "FR3697",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "SJJ",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LQSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 00:44",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 00:44",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "FR6095",
+      "departureAirportSwedish": "Gdansk",
+      "departureAirportEnglish": "Gdansk",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T22:45:00Z",
+        "estimatedUtc": "2026-10-07T22:11:00Z",
+        "actualUtc": "2026-10-07T22:11:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 00:11",
+        "flightLegStatusEnglish": "Landed 00:11"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-07T22:36:06Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-07T22:26:24Z",
+        "lastBagUtc": "2026-10-07T22:27:23Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR6095",
+        "aircraftRegistration": "EIEKX",
+        "flightId": "FR6095",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "GDN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EPGD",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 00:11",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 00:11",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "KL1229",
+      "departureAirportSwedish": "Amsterdam",
+      "departureAirportEnglish": "Amsterdam",
+      "airlineOperator": {
+        "iata": "KL",
+        "icao": "KLM",
+        "name": "KLM"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T07:15:00Z",
+        "estimatedUtc": "2026-10-08T07:05:00Z",
+        "actualUtc": "2026-10-08T07:03:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "19",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 09:03",
+        "flightLegStatusEnglish": "Landed 09:03"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T07:24:16Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T07:16:10Z",
+        "lastBagUtc": "2026-10-08T07:17:42Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "KLM1229",
+        "aircraftRegistration": "PHEXK",
+        "flightId": "KL1229",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "AMS",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EHAM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 09:03",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 09:03",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR4012",
+      "departureAirportSwedish": "Alicante",
+      "departureAirportEnglish": "Alicante",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T07:30:00Z",
+        "estimatedUtc": "2026-10-08T07:23:00Z",
+        "actualUtc": "2026-10-08T07:19:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 09:19",
+        "flightLegStatusEnglish": "Landed 09:19"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T07:43:36Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T07:31:30Z",
+        "lastBagUtc": "2026-10-08T07:33:37Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR8TE",
+        "aircraftRegistration": "EIIFS",
+        "flightId": "FR4012",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ALC",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LEAL",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 09:19",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 09:19",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK2151",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T07:10:00Z",
+        "estimatedUtc": "2026-10-08T06:54:00Z",
+        "actualUtc": "2026-10-08T06:54:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "14",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 08:54",
+        "flightLegStatusEnglish": "Landed 08:54"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T07:20:56Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T07:10:43Z",
+        "lastBagUtc": "2026-10-08T07:12:04Z"
+      },
+      "codeShareData": [
+        "NH6334"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS71L",
+        "aircraftRegistration": "EIJAE",
+        "flightId": "SK2151",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 08:54",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 08:54",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK434",
+      "departureAirportSwedish": "Köpenhamn",
+      "departureAirportEnglish": "Copenhagen",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T07:30:00Z",
+        "estimatedUtc": "2026-10-08T07:37:00Z",
+        "actualUtc": "2026-10-08T07:35:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "13",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 09:35",
+        "flightLegStatusEnglish": "Landed 09:35"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T08:01:53Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T07:49:31Z",
+        "lastBagUtc": "2026-10-08T07:51:01Z"
+      },
+      "codeShareData": [
+        "DL7668",
+        "SQ2734",
+        "VN4054"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS434",
+        "aircraftRegistration": "LNSAG",
+        "flightId": "SK434",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CPH",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EKCH",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 09:35",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 09:35",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "LH814",
+      "departureAirportSwedish": "Frankfurt",
+      "departureAirportEnglish": "Frankfurt",
+      "airlineOperator": {
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T08:05:00Z",
+        "estimatedUtc": "2026-10-08T08:05:00Z",
+        "actualUtc": "2026-10-08T08:09:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "15",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 10:09",
+        "flightLegStatusEnglish": "Landed 10:09"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T08:34:56Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T08:26:45Z",
+        "lastBagUtc": "2026-10-08T08:34:34Z"
+      },
+      "codeShareData": [
+        "AC9379",
+        "ET1565",
+        "EY3760",
+        "NH5406",
+        "OS7485",
+        "SN7075",
+        "SQ2186",
+        "UA8934"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "DLH3YY",
+        "aircraftRegistration": "DAIZD",
+        "flightId": "LH814",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "FRA",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDF",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 10:09",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 10:09",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK143",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T08:10:00Z",
+        "estimatedUtc": "2026-10-08T08:04:00Z",
+        "actualUtc": "2026-10-08T08:04:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "16",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 10:04",
+        "flightLegStatusEnglish": "Landed 10:04"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T08:30:50Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T08:19:24Z",
+        "lastBagUtc": "2026-10-08T08:20:23Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS143",
+        "aircraftRegistration": "EISIT",
+        "flightId": "SK143",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 10:04",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 10:04",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "BA786",
+      "departureAirportSwedish": "London LHR",
+      "departureAirportEnglish": "London LHR",
+      "airlineOperator": {
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T09:00:00Z",
+        "estimatedUtc": "2026-10-08T08:44:00Z",
+        "actualUtc": "2026-10-08T08:45:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "22",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 10:45",
+        "flightLegStatusEnglish": "Landed 10:45"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T09:05:27Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T08:58:45Z",
+        "lastBagUtc": "2026-10-08T09:03:10Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BAW786",
+        "aircraftRegistration": "GDBCK",
+        "flightId": "BA786",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "LHR",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EGLL",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 10:45",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 10:45",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "OJ811",
+      "departureAirportSwedish": "Visby",
+      "departureAirportEnglish": "Visby",
+      "airlineOperator": {
+        "iata": "OJ",
+        "icao": "NYX",
+        "name": "Nyxair"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T09:00:00Z",
+        "estimatedUtc": "2026-10-08T08:43:00Z",
+        "actualUtc": "2026-10-08T08:48:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "17",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 10:48",
+        "flightLegStatusEnglish": "Landed 10:48"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T09:06:00Z",
+        "baggageClaimUnit": "5",
+        "firstBagUtc": "2026-10-08T09:00:54Z",
+        "lastBagUtc": "2026-10-08T09:01:45Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "NYX811",
+        "aircraftRegistration": "ESNTB",
+        "flightId": "OJ811",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "VBY",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSV",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 10:48",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 10:48",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FR8725",
+      "departureAirportSwedish": "Milano MXP",
+      "departureAirportEnglish": "Milan MXP",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T08:30:00Z",
+        "estimatedUtc": "2026-10-08T08:24:00Z",
+        "actualUtc": "2026-10-08T08:27:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 10:27",
+        "flightLegStatusEnglish": "Landed 10:27"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T08:52:32Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T08:39:03Z",
+        "lastBagUtc": "2026-10-08T08:40:33Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR6WT",
+        "aircraftRegistration": "EIEVH",
+        "flightId": "FR8725",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "MXP",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LIMC",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 10:27",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 10:27",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "LH2428",
+      "departureAirportSwedish": "München",
+      "departureAirportEnglish": "Munich",
+      "airlineOperator": {
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T09:05:00Z",
+        "estimatedUtc": "2026-10-08T09:04:00Z",
+        "actualUtc": "2026-10-08T09:09:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "12",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 11:09",
+        "flightLegStatusEnglish": "Landed 11:09"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T09:26:00Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T09:21:00Z",
+        "lastBagUtc": "2026-10-08T09:24:44Z"
+      },
+      "codeShareData": [
+        "AC9577",
+        "EY3792",
+        "NH5428",
+        "UA9443"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "DLH6YW",
+        "aircraftRegistration": "DAIUI",
+        "flightId": "LH2428",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "MUC",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 11:09",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 11:09",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR3088",
+      "departureAirportSwedish": "Manchester",
+      "departureAirportEnglish": "Manchester",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T07:45:00Z",
+        "estimatedUtc": "2026-10-08T09:01:00Z",
+        "actualUtc": "2026-10-08T09:01:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "23",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 11:01",
+        "flightLegStatusEnglish": "Landed 11:01"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T09:26:11Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T09:16:46Z",
+        "lastBagUtc": "2026-10-08T09:18:28Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR88NK",
+        "aircraftRegistration": "EIGXN",
+        "flightId": "FR3088",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "MAN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EGCC",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 11:01",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 11:01",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "WF202",
+      "departureAirportSwedish": "Bergen",
+      "departureAirportEnglish": "Bergen",
+      "airlineOperator": {
+        "iata": "WF",
+        "icao": "WIF",
+        "name": "Wideroe"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T09:00:00Z",
+        "estimatedUtc": "2026-10-08T08:55:00Z",
+        "actualUtc": "2026-10-08T08:58:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "14",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 10:58",
+        "flightLegStatusEnglish": "Landed 10:58"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T09:17:47Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T09:12:24Z",
+        "lastBagUtc": "2026-10-08T09:14:28Z"
+      },
+      "codeShareData": [
+        "AY2902"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "WIF84D",
+        "aircraftRegistration": "LNWDM",
+        "flightId": "WF202",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "BGO",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ENBR",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 10:58",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 10:58",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "AY863",
+      "departureAirportSwedish": "Helsingfors",
+      "departureAirportEnglish": "Helsinki",
+      "airlineOperator": {
+        "iata": "AY",
+        "icao": "FIN",
+        "name": "Finnair"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T10:15:00Z",
+        "estimatedUtc": "2026-10-08T09:59:00Z",
+        "actualUtc": "2026-10-08T10:01:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "17",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 12:01",
+        "flightLegStatusEnglish": "Landed 12:01"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T10:21:29Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T10:38:00Z",
+        "lastBagUtc": "2026-10-08T10:40:19Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FIN863",
+        "aircraftRegistration": "OHLKE",
+        "flightId": "AY863",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "HEL",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EFHK",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 12:01",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 12:01",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "D85261",
+      "departureAirportSwedish": "London LGW",
+      "departureAirportEnglish": "London LGW",
+      "airlineOperator": {
+        "iata": "D8",
+        "icao": "NSZ",
+        "name": "Norwegian"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T10:25:00Z",
+        "estimatedUtc": "2026-10-08T09:58:00Z",
+        "actualUtc": "2026-10-08T09:56:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "21B",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 11:56",
+        "flightLegStatusEnglish": "Landed 11:56"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T10:15:06Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T10:14:18Z",
+        "lastBagUtc": "2026-10-08T10:15:55Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "NSZ5261",
+        "aircraftRegistration": "SERPT",
+        "flightId": "D85261",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "LGW",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EGKK",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 11:56",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 11:56",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "SK157",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T10:40:00Z",
+        "estimatedUtc": "2026-10-08T10:47:00Z",
+        "actualUtc": "2026-10-08T10:47:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "16",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 12:47",
+        "flightLegStatusEnglish": "Landed 12:47"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T11:13:16Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T11:02:07Z",
+        "lastBagUtc": "2026-10-08T11:04:13Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS157",
+        "aircraftRegistration": "EISCA",
+        "flightId": "SK157",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 12:47",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 12:47",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FR6152",
+      "departureAirportSwedish": "Prag",
+      "departureAirportEnglish": "Prague",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T11:15:00Z",
+        "estimatedUtc": "2026-10-08T10:41:00Z",
+        "actualUtc": "2026-10-08T10:42:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 12:42",
+        "flightLegStatusEnglish": "Landed 12:42"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T11:06:10Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T11:01:28Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR525H",
+        "aircraftRegistration": "SPRSE",
+        "flightId": "FR6152",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "PRG",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LKPR",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "First bag on belt",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Landed 12:42",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Första bagage",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Landat 12:42",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "KL1231",
+      "departureAirportSwedish": "Amsterdam",
+      "departureAirportEnglish": "Amsterdam",
+      "airlineOperator": {
+        "iata": "KL",
+        "icao": "KLM",
+        "name": "KLM"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T09:20:00Z",
+        "estimatedUtc": "2026-10-08T09:17:00Z",
+        "actualUtc": "2026-10-08T09:15:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "19",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 11:15",
+        "flightLegStatusEnglish": "Landed 11:15"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T09:36:59Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T09:29:04Z",
+        "lastBagUtc": "2026-10-08T09:31:23Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "KLM87R",
+        "aircraftRegistration": "PHBXN",
+        "flightId": "KL1231",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "AMS",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EHAM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 11:15",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 11:15",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "AF1152",
+      "departureAirportSwedish": "Paris CDG",
+      "departureAirportEnglish": "Paris CDG",
+      "airlineOperator": {
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T10:20:00Z",
+        "estimatedUtc": "2026-10-08T10:15:00Z",
+        "actualUtc": "2026-10-08T10:18:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "14",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 12:18",
+        "flightLegStatusEnglish": "Landed 12:18"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T10:38:20Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T10:38:02Z",
+        "lastBagUtc": "2026-10-08T10:43:15Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "AFR35ZN",
+        "aircraftRegistration": "FHBQB",
+        "flightId": "AF1152",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CDG",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LFPG",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 12:18",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 12:18",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "KL1233",
+      "departureAirportSwedish": "Amsterdam",
+      "departureAirportEnglish": "Amsterdam",
+      "airlineOperator": {
+        "iata": "KL",
+        "icao": "KLM",
+        "name": "KLM"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T11:45:00Z",
+        "estimatedUtc": "2026-10-08T11:49:00Z",
+        "actualUtc": "2026-10-08T11:50:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "17",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 13:50",
+        "flightLegStatusEnglish": "Landed 13:50"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T12:11:58Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T12:08:24Z",
+        "lastBagUtc": "2026-10-08T12:14:14Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "KLM73J",
+        "aircraftRegistration": "PHNXF",
+        "flightId": "KL1233",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "AMS",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EHAM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 13:50",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 13:50",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "EW8220",
+      "departureAirportSwedish": "Berlin",
+      "departureAirportEnglish": "Berlin",
+      "airlineOperator": {
+        "iata": "EW",
+        "icao": "EWG",
+        "name": "Eurowings"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T12:25:00Z",
+        "estimatedUtc": "2026-10-08T12:04:00Z",
+        "actualUtc": "2026-10-08T12:02:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "12",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 14:02",
+        "flightLegStatusEnglish": "Landed 14:02"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T12:21:42Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T12:18:02Z",
+        "lastBagUtc": "2026-10-08T12:21:06Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "EWG7NF",
+        "aircraftRegistration": "DAENA",
+        "flightId": "EW8220",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "BER",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDB",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 14:02",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 14:02",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "LX1222",
+      "departureAirportSwedish": "Zürich",
+      "departureAirportEnglish": "Zürich",
+      "airlineOperator": {
+        "iata": "LX",
+        "icao": "SWR",
+        "name": "Swiss"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T12:05:00Z",
+        "estimatedUtc": "2026-10-08T11:51:00Z",
+        "actualUtc": "2026-10-08T11:53:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "13",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 13:53",
+        "flightLegStatusEnglish": "Landed 13:53"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T12:20:47Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T12:05:23Z",
+        "lastBagUtc": "2026-10-08T12:28:39Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SWR2VF",
+        "aircraftRegistration": "HBAZC",
+        "flightId": "LX1222",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ZRH",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LSZH",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 13:53",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 13:53",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK430",
+      "departureAirportSwedish": "Köpenhamn",
+      "departureAirportEnglish": "Copenhagen",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T12:55:00Z",
+        "estimatedUtc": "2026-10-08T12:42:00Z",
+        "actualUtc": "2026-10-08T12:42:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "15",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 14:42",
+        "flightLegStatusEnglish": "Landed 14:42"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T13:08:29Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T12:58:58Z",
+        "lastBagUtc": "2026-10-08T13:02:35Z"
+      },
+      "codeShareData": [
+        "A33332",
+        "DL7663",
+        "SQ2600"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS430",
+        "aircraftRegistration": "EISIG",
+        "flightId": "SK430",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CPH",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EKCH",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 14:42",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 14:42",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR4010",
+      "departureAirportSwedish": "Krakow",
+      "departureAirportEnglish": "Krakow",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T13:15:00Z",
+        "estimatedUtc": "2026-10-08T13:06:00Z",
+        "actualUtc": "2026-10-08T13:03:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 15:03",
+        "flightLegStatusEnglish": "Landed 15:03"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T13:30:14Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T13:18:41Z",
+        "lastBagUtc": "2026-10-08T13:20:26Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR3DT",
+        "aircraftRegistration": "SPRSO",
+        "flightId": "FR4010",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "KRK",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EPKK",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 15:03",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 15:03",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "BLX314",
+      "departureAirportSwedish": "Chania",
+      "departureAirportEnglish": "Chania",
+      "airlineOperator": {
+        "iata": "BLX",
+        "icao": "BLX",
+        "name": "Tui Fly Nordic"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T13:30:00Z",
+        "estimatedUtc": "2026-10-08T13:16:00Z",
+        "actualUtc": "2026-10-08T13:16:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "13",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 15:16",
+        "flightLegStatusEnglish": "Landed 15:16"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T13:47:15Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T13:56:05Z",
+        "lastBagUtc": "2026-10-08T14:03:26Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BLX314",
+        "aircraftRegistration": "SERNF",
+        "flightId": "BLX314",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CHQ",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LGSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 15:16",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 15:16",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK2908",
+      "departureAirportSwedish": "Malaga",
+      "departureAirportEnglish": "Malaga",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T13:25:00Z",
+        "estimatedUtc": "2026-10-08T13:31:00Z",
+        "actualUtc": "2026-10-08T13:29:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "19",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 15:29",
+        "flightLegStatusEnglish": "Landed 15:29"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T13:54:49Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T13:46:27Z",
+        "lastBagUtc": "2026-10-08T13:52:25Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS36E",
+        "aircraftRegistration": "EISCG",
+        "flightId": "SK2908",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "AGP",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LEMG",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 15:29",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 15:29",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "BLX398",
+      "departureAirportSwedish": "Chania",
+      "departureAirportEnglish": "Chania",
+      "airlineOperator": {
+        "iata": "BLX",
+        "icao": "BLX",
+        "name": "Tui Fly Nordic"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T13:55:00Z",
+        "estimatedUtc": "2026-10-08T13:50:00Z",
+        "actualUtc": "2026-10-08T13:49:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "15",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 15:49",
+        "flightLegStatusEnglish": "Landed 15:49"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T14:19:38Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T14:19:33Z",
+        "lastBagUtc": "2026-10-08T14:25:59Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BLX9PT",
+        "aircraftRegistration": "SERNE",
+        "flightId": "BLX398",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CHQ",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LGSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 15:49",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 15:49",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "DK1789",
+      "departureAirportSwedish": "Heraklion",
+      "departureAirportEnglish": "Heraklion",
+      "airlineOperator": {
+        "iata": "DK",
+        "icao": "VKG",
+        "name": "Sunclass Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T13:45:00Z",
+        "estimatedUtc": "2026-10-08T14:01:00Z",
+        "actualUtc": "2026-10-08T14:02:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "12",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 16:02",
+        "flightLegStatusEnglish": "Landed 16:02"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T14:22:09Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T14:24:20Z",
+        "lastBagUtc": "2026-10-08T14:39:34Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "VKG789",
+        "aircraftRegistration": "OYTCE",
+        "flightId": "DK1789",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "HER",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LGIR",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 16:02",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 16:02",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "AY865",
+      "departureAirportSwedish": "Helsingfors",
+      "departureAirportEnglish": "Helsinki",
+      "airlineOperator": {
+        "iata": "AY",
+        "icao": "FIN",
+        "name": "Finnair"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T14:45:00Z",
+        "estimatedUtc": "2026-10-08T14:52:00Z",
+        "actualUtc": "2026-10-08T14:53:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "19",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 16:53",
+        "flightLegStatusEnglish": "Landed 16:53"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T15:12:50Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T15:07:39Z",
+        "lastBagUtc": "2026-10-08T15:09:36Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FIN4NR",
+        "aircraftRegistration": "OHLKE",
+        "flightId": "AY865",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "HEL",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EFHK",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 16:53",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 16:53",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR5657",
+      "departureAirportSwedish": "Edinburgh",
+      "departureAirportEnglish": "Edinburgh",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:15:00Z",
+        "estimatedUtc": "2026-10-08T14:57:00Z",
+        "actualUtc": "2026-10-08T14:56:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "23",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 16:56",
+        "flightLegStatusEnglish": "Landed 16:56"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T15:20:15Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T15:09:24Z",
+        "lastBagUtc": "2026-10-08T15:11:02Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR228K",
+        "aircraftRegistration": "EIHGE",
+        "flightId": "FR5657",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "EDI",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EGPH",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 16:56",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 16:56",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "FR964",
+      "departureAirportSwedish": "London STN",
+      "departureAirportEnglish": "London STN",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T10:10:00Z",
+        "estimatedUtc": "2026-10-08T10:13:00Z",
+        "actualUtc": "2026-10-08T10:10:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "22",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 12:10",
+        "flightLegStatusEnglish": "Landed 12:10"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T10:36:23Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T10:36:55Z",
+        "lastBagUtc": "2026-10-08T10:38:20Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR834F",
+        "aircraftRegistration": "EIIJT",
+        "flightId": "FR964",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "STN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EGSS",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 12:10",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 12:10",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "SN2317",
+      "departureAirportSwedish": "Bryssel",
+      "departureAirportEnglish": "Brussels",
+      "airlineOperator": {
+        "iata": "SN",
+        "icao": "BEL",
+        "name": "Brussels Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:35:00Z",
+        "estimatedUtc": "2026-10-08T15:41:00Z",
+        "actualUtc": "2026-10-08T15:37:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "13",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 17:37",
+        "flightLegStatusEnglish": "Landed 17:37"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T15:58:39Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T15:54:59Z",
+        "lastBagUtc": "2026-10-08T15:59:12Z"
+      },
+      "codeShareData": [
+        "TP7462"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "BEL4DQ",
+        "aircraftRegistration": "OOSSJ",
+        "flightId": "SN2317",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "BRU",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EBBR",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 17:37",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 17:37",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "LH818",
+      "departureAirportSwedish": "Frankfurt",
+      "departureAirportEnglish": "Frankfurt",
+      "airlineOperator": {
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T16:15:00Z",
+        "estimatedUtc": "2026-10-08T16:13:00Z",
+        "actualUtc": "2026-10-08T16:12:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:12",
+        "flightLegStatusEnglish": "Landed 18:12"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:38:51Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T16:29:18Z",
+        "lastBagUtc": "2026-10-08T16:32:38Z"
+      },
+      "codeShareData": [
+        "AC9066",
+        "OS7483",
+        "SN7073",
+        "UA9530"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "DLH1LA",
+        "aircraftRegistration": "DAIBF",
+        "flightId": "LH818",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "FRA",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDF",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:12",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:12",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "BA788",
+      "departureAirportSwedish": "London LHR",
+      "departureAirportEnglish": "London LHR",
+      "airlineOperator": {
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:15:00Z",
+        "estimatedUtc": "2026-10-08T16:07:00Z",
+        "actualUtc": "2026-10-08T16:03:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "22",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:03",
+        "flightLegStatusEnglish": "Landed 18:03"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:24:56Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T16:22:25Z",
+        "lastBagUtc": "2026-10-08T16:35:35Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BAW788",
+        "aircraftRegistration": "GEUUF",
+        "flightId": "BA788",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "LHR",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EGLL",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:03",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:03",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "OS971",
+      "departureAirportSwedish": "Wien",
+      "departureAirportEnglish": "Vienna",
+      "airlineOperator": {
+        "iata": "OS",
+        "icao": "AUA",
+        "name": "Austrian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:45:00Z",
+        "estimatedUtc": "2026-10-08T16:08:00Z",
+        "actualUtc": "2026-10-08T16:09:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "16",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:09",
+        "flightLegStatusEnglish": "Landed 18:09"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:29:00Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T16:36:46Z",
+        "lastBagUtc": "2026-10-08T16:43:23Z"
+      },
+      "codeShareData": [
+        "OU5562"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "AUA971",
+        "aircraftRegistration": "OELXE",
+        "flightId": "OS971",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "VIE",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LOWW",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:09",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:09",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR3713",
+      "departureAirportSwedish": "Sarajevo",
+      "departureAirportEnglish": "Sarajevo",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T16:05:00Z",
+        "estimatedUtc": "2026-10-08T16:34:00Z",
+        "actualUtc": "2026-10-08T16:31:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "A4",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:31",
+        "flightLegStatusEnglish": "Landed 18:31"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:54:46Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T16:49:06Z",
+        "lastBagUtc": "2026-10-08T16:53:31Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR3713",
+        "aircraftRegistration": "EIIJT",
+        "flightId": "FR3713",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "SJJ",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LQSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:31",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:31",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "VL2430",
+      "departureAirportSwedish": "München",
+      "departureAirportEnglish": "Munich",
+      "airlineOperator": {
+        "iata": "VL",
+        "icao": "LHX",
+        "name": "Lufthansa City"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:50:00Z",
+        "estimatedUtc": "2026-10-08T16:09:00Z",
+        "actualUtc": "2026-10-08T16:08:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "15",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:08",
+        "flightLegStatusEnglish": "Landed 18:08"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:28:35Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T16:25:27Z",
+        "lastBagUtc": "2026-10-08T16:32:36Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "LHX3PP",
+        "aircraftRegistration": "DABGH",
+        "flightId": "VL2430",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "MUC",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:08",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:08",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "AF1452",
+      "departureAirportSwedish": "Paris CDG",
+      "departureAirportEnglish": "Paris CDG",
+      "airlineOperator": {
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:10:00Z",
+        "estimatedUtc": "2026-10-08T14:57:00Z",
+        "actualUtc": "2026-10-08T15:01:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "14",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 17:01",
+        "flightLegStatusEnglish": "Landed 17:01"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T15:22:24Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T15:18:37Z",
+        "lastBagUtc": "2026-10-08T15:21:13Z"
+      },
+      "codeShareData": [
+        "AZ3708",
+        "DL8576",
+        "G35208",
+        "KQ3272",
+        "MK9642",
+        "UU8452"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "AFR84BM",
+        "aircraftRegistration": "FHBQA",
+        "flightId": "AF1452",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CDG",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LFPG",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 17:01",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 17:01",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "AY861",
+      "departureAirportSwedish": "Helsingfors",
+      "departureAirportEnglish": "Helsinki",
+      "airlineOperator": {
+        "iata": "AY",
+        "icao": "FIN",
+        "name": "Finnair"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T05:45:00Z",
+        "estimatedUtc": "2026-10-08T05:36:00Z",
+        "actualUtc": "2026-10-08T05:39:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "17",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 07:39",
+        "flightLegStatusEnglish": "Landed 07:39"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T05:59:54Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T05:57:31Z",
+        "lastBagUtc": "2026-10-08T05:59:28Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FIN7WB",
+        "aircraftRegistration": "OHLKL",
+        "flightId": "AY861",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "HEL",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EFHK",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 07:39",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 07:39",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "KL1235",
+      "departureAirportSwedish": "Amsterdam",
+      "departureAirportEnglish": "Amsterdam",
+      "airlineOperator": {
+        "iata": "KL",
+        "icao": "KLM",
+        "name": "KLM"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:45:00Z",
+        "estimatedUtc": "2026-10-08T15:45:00Z",
+        "actualUtc": "2026-10-08T15:48:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "17",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 17:48",
+        "flightLegStatusEnglish": "Landed 17:48"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:09:16Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T16:27:30Z",
+        "lastBagUtc": "2026-10-08T16:31:01Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "KLM61D",
+        "aircraftRegistration": "PHNXV",
+        "flightId": "KL1235",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "AMS",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EHAM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 17:48",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 17:48",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK163",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T16:05:00Z",
+        "estimatedUtc": "2026-10-08T16:29:00Z",
+        "actualUtc": "2026-10-08T16:28:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "19",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:28",
+        "flightLegStatusEnglish": "Landed 18:28"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:55:05Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T16:49:18Z",
+        "lastBagUtc": "2026-10-08T17:22:34Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS68G",
+        "aircraftRegistration": "EISIP",
+        "flightId": "SK163",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:28",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:28",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "LH816",
+      "departureAirportSwedish": "Frankfurt",
+      "departureAirportEnglish": "Frankfurt",
+      "airlineOperator": {
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T11:25:00Z",
+        "estimatedUtc": "2026-10-08T11:25:00Z",
+        "actualUtc": "2026-10-08T11:24:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "15",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 13:24",
+        "flightLegStatusEnglish": "Landed 13:24"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T11:51:04Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T11:39:01Z",
+        "lastBagUtc": "2026-10-08T12:02:16Z"
+      },
+      "codeShareData": [
+        "A31420",
+        "AC9015",
+        "EY3760",
+        "OS7479",
+        "SN7071",
+        "UA8725"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "DLH5EV",
+        "aircraftRegistration": "DAIZC",
+        "flightId": "LH816",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "FRA",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDF",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 13:24",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 13:24",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "D82026",
+      "departureAirportSwedish": "Riga",
+      "departureAirportEnglish": "Riga",
+      "airlineOperator": {
+        "iata": "D8",
+        "icao": "NSZ",
+        "name": "Norwegian"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T16:50:00Z",
+        "estimatedUtc": "2026-10-08T16:35:00Z",
+        "actualUtc": "2026-10-08T16:34:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "17",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:34",
+        "flightLegStatusEnglish": "Landed 18:34"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:54:29Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T16:47:46Z",
+        "lastBagUtc": "2026-10-08T16:49:16Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "NSZ2026",
+        "aircraftRegistration": "SERRO",
+        "flightId": "D82026",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "RIX",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EVRA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:34",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:34",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "D85504",
+      "departureAirportSwedish": "Barcelona",
+      "departureAirportEnglish": "Barcelona",
+      "airlineOperator": {
+        "iata": "D8",
+        "icao": "NSZ",
+        "name": "Norwegian"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T17:15:00Z",
+        "estimatedUtc": "2026-10-08T17:00:00Z",
+        "actualUtc": "2026-10-08T17:00:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "15",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 19:00",
+        "flightLegStatusEnglish": "Landed 19:00"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T17:21:47Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T17:37:04Z",
+        "lastBagUtc": "2026-10-08T17:42:28Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "NSZ5504",
+        "aircraftRegistration": "LNNHA",
+        "flightId": "D85504",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "BCN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LEBL",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 19:00",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 19:00",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "D85058",
+      "departureAirportSwedish": "Malaga",
+      "departureAirportEnglish": "Malaga",
+      "airlineOperator": {
+        "iata": "D8",
+        "icao": "NSZ",
+        "name": "Norwegian"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T16:50:00Z",
+        "estimatedUtc": "2026-10-08T16:59:00Z",
+        "actualUtc": "2026-10-08T16:57:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "12",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:57",
+        "flightLegStatusEnglish": "Landed 18:57"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T17:17:56Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T17:17:36Z",
+        "lastBagUtc": "2026-10-08T17:22:45Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "NSZ5TQ",
+        "aircraftRegistration": "SERPU",
+        "flightId": "D85058",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "AGP",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LEMG",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:57",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:57",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK165",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T16:55:00Z",
+        "estimatedUtc": "2026-10-08T17:01:00Z",
+        "actualUtc": "2026-10-08T17:06:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "21A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 19:06",
+        "flightLegStatusEnglish": "Landed 19:06"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T17:32:00Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T17:22:39Z",
+        "lastBagUtc": "2026-10-08T17:26:12Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS22A",
+        "aircraftRegistration": "EISIL",
+        "flightId": "SK165",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 19:06",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 19:06",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "FR4527",
+      "departureAirportSwedish": "Malta",
+      "departureAirportEnglish": "Malta",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T12:20:00Z",
+        "estimatedUtc": "2026-10-08T12:03:00Z",
+        "actualUtc": "2026-10-08T12:05:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "16",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 14:05",
+        "flightLegStatusEnglish": "Landed 14:05"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T12:29:34Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T12:22:19Z",
+        "lastBagUtc": "2026-10-08T12:25:07Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR866X",
+        "aircraftRegistration": "9HVVC",
+        "flightId": "FR4527",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "MLA",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LMML",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 14:05",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 14:05",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR091",
+      "departureAirportSwedish": "Malaga",
+      "departureAirportEnglish": "Malaga",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T17:35:00Z",
+        "estimatedUtc": "2026-10-08T18:08:00Z",
+        "actualUtc": "2026-10-08T18:08:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 20:08",
+        "flightLegStatusEnglish": "Landed 20:08"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T18:31:43Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T18:26:21Z",
+        "lastBagUtc": "2026-10-08T18:29:48Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR98FA",
+        "aircraftRegistration": "EIILD",
+        "flightId": "FR091",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "AGP",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LEMG",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 20:08",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 20:08",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK2141",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T18:15:00Z",
+        "estimatedUtc": "2026-10-08T18:16:00Z",
+        "actualUtc": "2026-10-08T18:20:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "19",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 20:20",
+        "flightLegStatusEnglish": "Landed 20:20"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T18:45:46Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T18:33:03Z",
+        "lastBagUtc": "2026-10-08T18:35:52Z"
+      },
+      "codeShareData": [
+        "TP5533"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS2141",
+        "aircraftRegistration": "EISIE",
+        "flightId": "SK2141",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 20:20",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 20:20",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "AY867",
+      "departureAirportSwedish": "Helsingfors",
+      "departureAirportEnglish": "Helsinki",
+      "airlineOperator": {
+        "iata": "AY",
+        "icao": "FIN",
+        "name": "Finnair"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T18:15:00Z",
+        "estimatedUtc": "2026-10-08T18:04:00Z",
+        "actualUtc": "2026-10-08T18:05:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "14",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 20:05",
+        "flightLegStatusEnglish": "Landed 20:05"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T18:25:27Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T18:21:12Z",
+        "lastBagUtc": "2026-10-08T18:22:35Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "FIN6HA",
+        "aircraftRegistration": "OHLKI",
+        "flightId": "AY867",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "HEL",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EFHK",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 20:05",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 20:05",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "D85604",
+      "departureAirportSwedish": "Palma",
+      "departureAirportEnglish": "Palma",
+      "airlineOperator": {
+        "iata": "D8",
+        "icao": "NSZ",
+        "name": "Norwegian"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T17:35:00Z",
+        "estimatedUtc": "2026-10-08T18:10:00Z",
+        "actualUtc": "2026-10-08T18:06:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "13",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 20:06",
+        "flightLegStatusEnglish": "Landed 20:06"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T18:26:05Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T18:49:11Z",
+        "lastBagUtc": "2026-10-08T18:58:54Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "NSZ4BV",
+        "aircraftRegistration": "SERXA",
+        "flightId": "D85604",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "PMI",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LEPA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 20:06",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 20:06",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "W61735",
+      "departureAirportSwedish": "Gdansk",
+      "departureAirportEnglish": "Gdansk",
+      "airlineOperator": {
+        "iata": "W6",
+        "icao": "WZZ",
+        "name": "Wizz Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:10:00Z",
+        "estimatedUtc": "2026-10-08T14:59:00Z",
+        "actualUtc": "2026-10-08T14:59:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 16:59",
+        "flightLegStatusEnglish": "Landed 16:59"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T15:24:42Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T15:09:58Z",
+        "lastBagUtc": "2026-10-08T15:10:00Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "WZZ6QX",
+        "aircraftRegistration": "9HWBF",
+        "flightId": "W61735",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "GDN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EPGD",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 16:59",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 16:59",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "EW9222",
+      "departureAirportSwedish": "Düsseldorf",
+      "departureAirportEnglish": "Düsseldorf",
+      "airlineOperator": {
+        "iata": "EW",
+        "icao": "EWG",
+        "name": "Eurowings"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T17:45:00Z",
+        "estimatedUtc": "2026-10-08T18:39:00Z",
+        "actualUtc": "2026-10-08T18:42:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "12",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 20:42",
+        "flightLegStatusEnglish": "Landed 20:42"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T19:02:36Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T19:00:46Z",
+        "lastBagUtc": "2026-10-08T19:04:29Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "EWG5PC",
+        "aircraftRegistration": "DAEWO",
+        "flightId": "EW9222",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "DUS",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDL",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 20:42",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 20:42",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK161",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T13:35:00Z",
+        "estimatedUtc": "2026-10-08T13:35:00Z",
+        "actualUtc": "2026-10-08T13:35:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "16",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 15:35",
+        "flightLegStatusEnglish": "Landed 15:35"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T14:02:11Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T13:52:19Z",
+        "lastBagUtc": "2026-10-08T13:56:47Z"
+      },
+      "codeShareData": [
+        "A33310"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS161",
+        "aircraftRegistration": "EISIO",
+        "flightId": "SK161",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 15:35",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 15:35",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "D85356",
+      "departureAirportSwedish": "Alicante",
+      "departureAirportEnglish": "Alicante",
+      "airlineOperator": {
+        "iata": "D8",
+        "icao": "NSZ",
+        "name": "Norwegian"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T19:00:00Z",
+        "estimatedUtc": "2026-10-08T19:02:00Z",
+        "actualUtc": "2026-10-08T18:58:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "20A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 20:58",
+        "flightLegStatusEnglish": "Landed 20:58"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T19:18:48Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T19:21:21Z",
+        "lastBagUtc": "2026-10-08T19:25:41Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "NSZ4FU",
+        "aircraftRegistration": "SERPT",
+        "flightId": "D85356",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ALC",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LEAL",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 20:58",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 20:58",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR966",
+      "departureAirportSwedish": "London STN",
+      "departureAirportEnglish": "London STN",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T20:40:00Z",
+        "estimatedUtc": "2026-10-08T20:51:00Z",
+        "actualUtc": "2026-10-08T20:41:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "23",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 22:41",
+        "flightLegStatusEnglish": "Landed 22:41"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T21:07:00Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T20:59:26Z",
+        "lastBagUtc": "2026-10-08T20:59:27Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR4NX",
+        "aircraftRegistration": "9HVVC",
+        "flightId": "FR966",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "STN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EGSS",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 22:41",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 22:41",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "LO495",
+      "departureAirportSwedish": "Warszawa",
+      "departureAirportEnglish": "Warsaw",
+      "airlineOperator": {
+        "iata": "LO",
+        "icao": "LOT",
+        "name": "LOT"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T20:20:00Z",
+        "estimatedUtc": "2026-10-08T20:28:00Z",
+        "actualUtc": "2026-10-08T20:27:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "13",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 22:27",
+        "flightLegStatusEnglish": "Landed 22:27"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T20:53:06Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T20:47:16Z",
+        "lastBagUtc": "2026-10-08T20:50:08Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "LOT49H",
+        "aircraftRegistration": "SPLNH",
+        "flightId": "LO495",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "WAW",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EPWA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 22:27",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 22:27",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "W64709",
+      "departureAirportSwedish": "Skopje",
+      "departureAirportEnglish": "Skopje",
+      "airlineOperator": {
+        "iata": "W6",
+        "icao": "WZZ",
+        "name": "Wizz Air"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T20:05:00Z",
+        "estimatedUtc": "2026-10-08T20:33:00Z",
+        "actualUtc": "2026-10-08T20:31:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "22",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 22:31",
+        "flightLegStatusEnglish": "Landed 22:31"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T20:56:20Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T20:52:13Z",
+        "lastBagUtc": "2026-10-08T20:54:56Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "WZZ6040",
+        "aircraftRegistration": "HALZP",
+        "flightId": "W64709",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "SKP",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LWSK",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 22:31",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 22:31",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "SN2319",
+      "departureAirportSwedish": "Bryssel",
+      "departureAirportEnglish": "Brussels",
+      "airlineOperator": {
+        "iata": "SN",
+        "icao": "BEL",
+        "name": "Brussels Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T20:40:00Z",
+        "estimatedUtc": "2026-10-08T20:47:00Z",
+        "actualUtc": "2026-10-08T20:47:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "A1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 22:47",
+        "flightLegStatusEnglish": "Landed 22:47"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T21:08:00Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T21:16:29Z",
+        "lastBagUtc": "2026-10-08T21:20:06Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "BEL3UC",
+        "aircraftRegistration": "OOSNO",
+        "flightId": "SN2319",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "BRU",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EBBR",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 22:47",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 22:47",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "FR9071",
+      "departureAirportSwedish": "Gdansk",
+      "departureAirportEnglish": "Gdansk",
+      "airlineOperator": {
+        "iata": "FR",
+        "icao": "RYR",
+        "name": "Ryanair Ltd"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T16:00:00Z",
+        "estimatedUtc": "2026-10-08T15:46:00Z",
+        "actualUtc": "2026-10-08T15:46:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "21A",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 17:46",
+        "flightLegStatusEnglish": "Landed 17:46"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:10:35Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T15:59:50Z",
+        "lastBagUtc": "2026-10-08T16:01:43Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "RYR9071",
+        "aircraftRegistration": "9HVVC",
+        "flightId": "FR9071",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "GDN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EPGD",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 17:46",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 17:46",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "LH820",
+      "departureAirportSwedish": "Frankfurt",
+      "departureAirportEnglish": "Frankfurt",
+      "airlineOperator": {
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T21:35:00Z",
+        "estimatedUtc": "2026-10-08T21:52:00Z",
+        "actualUtc": "2026-10-08T21:51:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "15",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 23:51",
+        "flightLegStatusEnglish": "Landed 23:51"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T22:16:08Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T22:05:06Z",
+        "lastBagUtc": "2026-10-08T22:13:11Z"
+      },
+      "codeShareData": [
+        "A31430",
+        "EY3784",
+        "NH6193",
+        "OS7433",
+        "SN7069",
+        "SQ2188",
+        "WY5335"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "DLH7CE",
+        "aircraftRegistration": "DAIDE",
+        "flightId": "LH820",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "FRA",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDF",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 23:51",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 23:51",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "AF1552",
+      "departureAirportSwedish": "Paris CDG",
+      "departureAirportEnglish": "Paris CDG",
+      "airlineOperator": {
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T21:30:00Z",
+        "estimatedUtc": "2026-10-08T21:38:00Z",
+        "actualUtc": "2026-10-08T21:40:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "14",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 23:40",
+        "flightLegStatusEnglish": "Landed 23:40"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T21:58:25Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T21:55:55Z",
+        "lastBagUtc": "2026-10-08T21:57:52Z"
+      },
+      "codeShareData": [
+        "AZ3710",
+        "G35211"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "AFR92HV",
+        "aircraftRegistration": "FHBLY",
+        "flightId": "AF1552",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CDG",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LFPG",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 23:40",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 23:40",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "TK1799",
+      "departureAirportSwedish": "Istanbul IST",
+      "departureAirportEnglish": "Istanbul IST",
+      "airlineOperator": {
+        "iata": "TK",
+        "icao": "THY",
+        "name": "Turkish Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:55:00Z",
+        "estimatedUtc": "2026-10-08T16:05:00Z",
+        "actualUtc": "2026-10-08T16:06:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "23",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 18:06",
+        "flightLegStatusEnglish": "Landed 18:06"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T16:36:06Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T16:28:13Z",
+        "lastBagUtc": "2026-10-08T16:59:52Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "THY8XT",
+        "aircraftRegistration": "TCLPO",
+        "flightId": "TK1799",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "IST",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "LTFM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 18:06",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 18:06",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "I"
+    },
+    {
+      "flightId": "SK448",
+      "departureAirportSwedish": "Köpenhamn",
+      "departureAirportEnglish": "Copenhagen",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T21:55:00Z",
+        "estimatedUtc": "2026-10-08T22:01:00Z",
+        "actualUtc": "2026-10-08T22:02:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "19",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 00:02",
+        "flightLegStatusEnglish": "Landed 00:02"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T22:26:50Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T22:13:20Z",
+        "lastBagUtc": "2026-10-08T22:15:17Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS448",
+        "aircraftRegistration": "EISIF",
+        "flightId": "SK448",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CPH",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EKCH",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 00:02",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 00:02",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK1444",
+      "departureAirportSwedish": "Köpenhamn",
+      "departureAirportEnglish": "Copenhagen",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T18:05:00Z",
+        "estimatedUtc": "2026-10-08T18:01:00Z",
+        "actualUtc": "2026-10-08T17:56:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "16",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 19:56",
+        "flightLegStatusEnglish": "Landed 19:56"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T18:23:00Z",
+        "baggageClaimUnit": "4",
+        "firstBagUtc": "2026-10-08T18:12:41Z",
+        "lastBagUtc": "2026-10-08T18:15:35Z"
+      },
+      "codeShareData": [
+        "TP5587",
+        "UX3269"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS1444",
+        "aircraftRegistration": "LNRGL",
+        "flightId": "SK1444",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "CPH",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EKCH",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 19:56",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 19:56",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "KL1239",
+      "departureAirportSwedish": "Amsterdam",
+      "departureAirportEnglish": "Amsterdam",
+      "airlineOperator": {
+        "iata": "KL",
+        "icao": "KLM",
+        "name": "KLM"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T20:50:00Z",
+        "estimatedUtc": "2026-10-08T21:04:00Z",
+        "actualUtc": "2026-10-08T21:04:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "17",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 23:04",
+        "flightLegStatusEnglish": "Landed 23:04"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T21:25:21Z",
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T21:20:13Z",
+        "lastBagUtc": "2026-10-08T21:22:49Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "KLM45Q",
+        "aircraftRegistration": "PHBXI",
+        "flightId": "KL1239",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "AMS",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EHAM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 23:04",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 23:04",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "LH2432",
+      "departureAirportSwedish": "München",
+      "departureAirportEnglish": "Munich",
+      "airlineOperator": {
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T21:05:00Z",
+        "estimatedUtc": "2026-10-08T20:59:00Z",
+        "actualUtc": "2026-10-08T20:59:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "12",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 22:59",
+        "flightLegStatusEnglish": "Landed 22:59"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T21:25:15Z",
+        "baggageClaimUnit": "3",
+        "firstBagUtc": "2026-10-08T21:15:17Z",
+        "lastBagUtc": "2026-10-08T21:34:49Z"
+      },
+      "codeShareData": [
+        "A31572",
+        "AZ4868",
+        "UA9442"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "DLH8FT",
+        "aircraftRegistration": "DAIDX",
+        "flightId": "LH2432",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "MUC",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "EDDM",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 22:59",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 22:59",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "S"
+    },
+    {
+      "flightId": "SK171",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T21:20:00Z",
+        "estimatedUtc": "2026-10-08T21:15:00Z",
+        "actualUtc": "2026-10-08T21:15:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "16",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 23:15",
+        "flightLegStatusEnglish": "Landed 23:15"
+      },
+      "baggage": {
+        "estimatedFirstBagUtc": "2026-10-08T21:41:03Z",
+        "baggageClaimUnit": "2",
+        "firstBagUtc": "2026-10-08T21:34:12Z",
+        "lastBagUtc": "2026-10-08T21:37:39Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS171",
+        "aircraftRegistration": "EISIB",
+        "flightId": "SK171",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "GOT",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESGG"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 23:15",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 23:15",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    }
+  ]
+}

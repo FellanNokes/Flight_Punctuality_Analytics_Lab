@@ -1,0 +1,355 @@
+{
+  "to": {
+    "arrivalAirportIata": "RNB",
+    "arrivalAirportIcao": "ESDF",
+    "arrivalAirportSwedish": "Ronneby",
+    "arrivalAirportEnglish": "Ronneby",
+    "flightArrivalDate": "2026-10-07"
+  },
+  "numberOfFlights": 6,
+  "flights": [
+    {
+      "flightId": "SK1131",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T12:25:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "flightLegStatus": "DEL",
+        "flightLegStatusSwedish": "Borttagen",
+        "flightLegStatusEnglish": "Deleted"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS1131",
+        "flightId": "SK1131",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "RNB",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESDF"
+      },
+      "remarksEnglish": [],
+      "remarksSwedish": [],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK1129",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T07:35:00Z",
+        "estimatedUtc": "2026-10-07T07:28:00Z",
+        "actualUtc": "2026-10-07T07:31:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 09:31",
+        "flightLegStatusEnglish": "Landed 09:31"
+      },
+      "baggage": {
+        "baggageClaimUnit": "01",
+        "firstBagUtc": "2026-10-07T07:36:33Z",
+        "lastBagUtc": "2026-10-07T07:36:58Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS33E",
+        "aircraftRegistration": "SEMKO",
+        "flightId": "SK1129",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "RNB",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESDF"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 09:31",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 09:31",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK1135",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T13:25:00Z",
+        "estimatedUtc": "2026-10-07T13:10:00Z",
+        "actualUtc": "2026-10-07T13:03:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 15:03",
+        "flightLegStatusEnglish": "Landed 15:03"
+      },
+      "baggage": {
+        "baggageClaimUnit": "01",
+        "firstBagUtc": "2026-10-07T13:15:28Z",
+        "lastBagUtc": "2026-10-07T13:16:19Z"
+      },
+      "codeShareData": [
+        "AF4589",
+        "KL8540"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS1135",
+        "aircraftRegistration": "SEMKE",
+        "flightId": "SK1135",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "RNB",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESDF"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 15:03",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 15:03",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK1137",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T16:05:00Z",
+        "estimatedUtc": "2026-10-07T15:54:00Z",
+        "actualUtc": "2026-10-07T15:47:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 17:47",
+        "flightLegStatusEnglish": "Landed 17:47"
+      },
+      "baggage": {
+        "baggageClaimUnit": "01",
+        "firstBagUtc": "2026-10-07T16:01:12Z",
+        "lastBagUtc": "2026-10-07T16:02:53Z"
+      },
+      "codeShareData": [
+        "KL8472"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS1137",
+        "aircraftRegistration": "SEMKB",
+        "flightId": "SK1137",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "RNB",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESDF"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 17:47",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 17:47",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK1127",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T18:00:00Z",
+        "estimatedUtc": "2026-10-07T17:53:00Z",
+        "actualUtc": "2026-10-07T17:49:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 19:49",
+        "flightLegStatusEnglish": "Landed 19:49"
+      },
+      "baggage": {
+        "baggageClaimUnit": "01",
+        "firstBagUtc": "2026-10-07T18:06:44Z",
+        "lastBagUtc": "2026-10-07T18:07:39Z"
+      },
+      "codeShareData": [
+        "KL8462"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS1127",
+        "aircraftRegistration": "SEMKI",
+        "flightId": "SK1127",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "RNB",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESDF"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 19:49",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 19:49",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK1145",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-07T21:05:00Z",
+        "estimatedUtc": "2026-10-07T21:10:00Z",
+        "actualUtc": "2026-10-07T21:05:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "1",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 23:05",
+        "flightLegStatusEnglish": "Landed 23:05"
+      },
+      "baggage": {
+        "baggageClaimUnit": "01",
+        "firstBagUtc": "2026-10-07T21:22:04Z"
+      },
+      "codeShareData": [
+        "BT6173",
+        "KL8542"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS1145",
+        "aircraftRegistration": "SEMKE",
+        "flightId": "SK1145",
+        "flightDepartureDateUtc": "2026-10-07T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "RNB",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESDF"
+      },
+      "remarksEnglish": [
+        {
+          "text": "First bag on belt",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Landed 23:05",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Första bagage",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Landat 23:05",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    }
+  ]
+}

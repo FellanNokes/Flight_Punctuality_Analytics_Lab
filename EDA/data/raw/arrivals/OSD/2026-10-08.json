@@ -1,0 +1,358 @@
+{
+  "to": {
+    "arrivalAirportIata": "OSD",
+    "arrivalAirportIcao": "ESNZ",
+    "arrivalAirportSwedish": "Åre Östersund",
+    "arrivalAirportEnglish": "Åre Östersund",
+    "flightArrivalDate": "2026-10-08"
+  },
+  "numberOfFlights": 6,
+  "flights": [
+    {
+      "flightId": "JON201",
+      "departureAirportSwedish": "Umeå",
+      "departureAirportEnglish": "Umeå",
+      "airlineOperator": {
+        "iata": "JON",
+        "icao": "JON",
+        "name": "Jonair"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T05:20:00Z",
+        "estimatedUtc": "2026-10-08T05:15:00Z",
+        "actualUtc": "2026-10-08T05:13:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "01",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 07:13",
+        "flightLegStatusEnglish": "Landed 07:13"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "JON201",
+        "aircraftRegistration": "SEKVL",
+        "flightId": "JON201",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "UME",
+        "arrivalAirportIata": "OSD",
+        "departureAirportIcao": "ESNU",
+        "arrivalAirportIcao": "ESNZ"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 07:13",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 07:13",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK066",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T07:20:00Z",
+        "estimatedUtc": "2026-10-08T07:05:00Z",
+        "actualUtc": "2026-10-08T07:07:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "04",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 09:07",
+        "flightLegStatusEnglish": "Landed 09:07"
+      },
+      "baggage": {
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T07:17:41Z",
+        "lastBagUtc": "2026-10-08T07:19:53Z"
+      },
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "SAS066",
+        "aircraftRegistration": "EIGEC",
+        "flightId": "SK066",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "OSD",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESNZ"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 09:07",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 09:07",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK2064",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T13:15:00Z",
+        "estimatedUtc": "2026-10-08T13:12:00Z",
+        "actualUtc": "2026-10-08T13:09:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "04",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 15:09",
+        "flightLegStatusEnglish": "Landed 15:09"
+      },
+      "baggage": {
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T13:23:35Z",
+        "lastBagUtc": "2026-10-08T13:28:01Z"
+      },
+      "codeShareData": [
+        "AF3866",
+        "BT6172",
+        "KL8482"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS2064",
+        "aircraftRegistration": "SEROU",
+        "flightId": "SK2064",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "OSD",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESNZ"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 15:09",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 15:09",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "JON203",
+      "departureAirportSwedish": "Umeå",
+      "departureAirportEnglish": "Umeå",
+      "airlineOperator": {
+        "iata": "JON",
+        "icao": "JON",
+        "name": "Jonair"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T15:50:00Z",
+        "estimatedUtc": "2026-10-08T15:38:00Z",
+        "actualUtc": "2026-10-08T15:39:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "01",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 17:39",
+        "flightLegStatusEnglish": "Landed 17:39"
+      },
+      "baggage": {},
+      "codeShareData": [],
+      "flightLegIdentifier": {
+        "callsign": "JON203",
+        "aircraftRegistration": "SEMJV",
+        "flightId": "JON203",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "UME",
+        "arrivalAirportIata": "OSD",
+        "departureAirportIcao": "ESNU",
+        "arrivalAirportIcao": "ESNZ"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 17:39",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 17:39",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK070",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T17:20:00Z",
+        "estimatedUtc": "2026-10-08T17:16:00Z",
+        "actualUtc": "2026-10-08T17:13:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "04",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 19:13",
+        "flightLegStatusEnglish": "Landed 19:13"
+      },
+      "baggage": {
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T17:28:35Z",
+        "lastBagUtc": "2026-10-08T17:30:47Z"
+      },
+      "codeShareData": [
+        "KL8478"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS070",
+        "aircraftRegistration": "EISIY",
+        "flightId": "SK070",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "OSD",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESNZ"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 19:13",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 19:13",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    },
+    {
+      "flightId": "SK2062",
+      "departureAirportSwedish": "Stockholm ARN",
+      "departureAirportEnglish": "Stockholm ARN",
+      "airlineOperator": {
+        "iata": "SK",
+        "icao": "SAS",
+        "name": "SAS Scandinavian Airlines"
+      },
+      "arrivalTime": {
+        "scheduledUtc": "2026-10-08T21:00:00Z",
+        "estimatedUtc": "2026-10-08T21:10:00Z",
+        "actualUtc": "2026-10-08T21:13:00Z"
+      },
+      "locationAndStatus": {
+        "terminal": "T1",
+        "gate": "04",
+        "flightLegStatus": "LAN",
+        "flightLegStatusSwedish": "Landat 23:13",
+        "flightLegStatusEnglish": "Landed 23:13"
+      },
+      "baggage": {
+        "baggageClaimUnit": "1",
+        "firstBagUtc": "2026-10-08T21:25:09Z",
+        "lastBagUtc": "2026-10-08T21:27:34Z"
+      },
+      "codeShareData": [
+        "BT6170",
+        "KL8480",
+        "LO5415"
+      ],
+      "flightLegIdentifier": {
+        "callsign": "SAS2062",
+        "aircraftRegistration": "SEROU",
+        "flightId": "SK2062",
+        "flightDepartureDateUtc": "2026-10-08T00:00:00Z",
+        "departureAirportIata": "ARN",
+        "arrivalAirportIata": "OSD",
+        "departureAirportIcao": "ESSA",
+        "arrivalAirportIcao": "ESNZ"
+      },
+      "remarksEnglish": [
+        {
+          "text": "Landed 23:13",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Last bag on belt",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "remarksSwedish": [
+        {
+          "text": "Landat 23:13",
+          "indicator": "NEUTRAL"
+        },
+        {
+          "text": "Sista bagage",
+          "indicator": "NEUTRAL"
+        }
+      ],
+      "viaDestinations": [],
+      "diIndicator": "D"
+    }
+  ]
+}
