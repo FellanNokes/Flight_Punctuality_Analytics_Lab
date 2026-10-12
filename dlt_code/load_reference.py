@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 wikipedia_url = "https://en.wikipedia.org/wiki"
 
-@dlt.resource(write_deposition="merge")
+@dlt.resource(write_disposition="replace")
 def get_airports():
     airport_url = f"{wikipedia_url}/List_of_international_airports_by_country"
 
@@ -29,9 +29,21 @@ def get_airports():
         frames.append(df)
 
     df_airports = pd.concat(frames, ignore_index=True)
-    df_airports = df_airports[["Location", "Airport", "IATA Code", "ICAO Code", "country", "continent"]]
 
     yield df_airports
+
+
+def get_airlines():
+    airlines_url = f"{wikipedia_url}/List_of_airline_codes"
+
+    headers = {"User-Agent": "airline-codes-scraper/0.1 (your@email.com)"}
+    resp = requests.get(airlines_url, headers=headers, timeout=30)
+    resp.raise_for_status()
+    tables = pd.read_html(StringIO(resp.text))
+
+    df_airlines = tables[0]
+
+    yield df_airlines
 
 
 def run_pipelines():
@@ -40,18 +52,23 @@ def run_pipelines():
         destination="snowflake",
         dataset_name="staging"
     )
+    pipeline_airline = dlt.pipeline(
+        pipeline_name="wikipedia_airlines",
+        destination="snowflake",
+        dataset_name="staging"
+    )
 
 
-    data = get_airports()
-    load_info = pipeline_airports.run(data, table_name="airports")
-    print(load_info)
+    data_airport = get_airports()
+    load_info_airport = pipeline_airports.run(data_airport, table_name="airports")
+
+    data_airline = get_airlines()
+    load_info_airline = pipeline_airline.run(data_airline, table_name="airlines")
 
 
+    print(load_info_airport)
+    print(load_info_airline)
 
 
-
-
-
-
-airlines_url = f"{wikipedia_url}/List_of_airline_codes"
-
+if __name__ == "__main__":
+    run_pipelines()
