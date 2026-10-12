@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 wikipedia_url = "https://en.wikipedia.org/wiki"
 
-@dlt.resource(write_disposition="replace")
+@dlt.resource(name="airports", write_disposition="replace")
 def get_airports():
     airport_url = f"{wikipedia_url}/List_of_international_airports_by_country"
 
@@ -32,7 +32,7 @@ def get_airports():
 
     yield df_airports
 
-
+@dlt.resource(name="airlines", write_disposition="replace")
 def get_airlines():
     airlines_url = f"{wikipedia_url}/List_of_airline_codes"
 
@@ -47,27 +47,15 @@ def get_airlines():
 
 
 def run_pipelines():
-    pipeline_airports = dlt.pipeline(
-        pipeline_name="wikipedia_airports",
-        destination="snowflake",
-        dataset_name="staging"
-    )
-    pipeline_airline = dlt.pipeline(
-        pipeline_name="wikipedia_airlines",
+    pipeline = dlt.pipeline(
+        pipeline_name="wikipedia",
         destination="snowflake",
         dataset_name="staging"
     )
 
+    load_info = pipeline.run([get_airports(), get_airlines()])
 
-    data_airport = get_airports()
-    load_info_airport = pipeline_airports.run(data_airport, table_name="airports")
-
-    data_airline = get_airlines()
-    load_info_airline = pipeline_airline.run(data_airline, table_name="airlines")
-
-
-    print(load_info_airport)
-    print(load_info_airline)
+    print(load_info)
 
 
 if __name__ == "__main__":
