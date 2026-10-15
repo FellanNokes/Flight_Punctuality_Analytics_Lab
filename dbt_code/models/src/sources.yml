@@ -1,0 +1,20 @@
+sources:
+  - name: flights
+    schema: staging
+    tables:
+      - name: arrivals
+      - name: departures
+      - name: arrivals_via_destinations
+        identifier: arrivals__via_destinations
+      - name: departures_via_destinations
+        identifier: departures__via_destinations
+      - name: arrivals_remarks
+        identifier: arrivals__remarks_english
+      - name: departures_remarks
+        identifier: departures__remarks_english
+
+  - name: wikipedia
+    schema: staging
+    tables:
+      - name: airlines
+      - name: airports
