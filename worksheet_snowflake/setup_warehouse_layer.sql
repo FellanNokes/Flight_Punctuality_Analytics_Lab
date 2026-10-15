@@ -35,7 +35,7 @@ GRANT SELECT ON FUTURE VIEWS IN SCHEMA flights.warehouse TO ROLE flights_dbt_rol
 
 -- test on the new role
 USE ROLE flights_dbt_role;
-SELECT * FROM flights.staging.arivals LIMIT 10;
+SELECT * FROM flights.staging.arrivals LIMIT 10;
 
 SHOW GRANTS ON SCHEMA flights.warehouse;
 
