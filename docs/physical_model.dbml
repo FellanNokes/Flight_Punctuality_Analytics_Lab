@@ -1,35 +1,29 @@
 Table fct_arivals {
-  fct_arivals_id VARCHAR [primary key, unique]
   airline_id VARCHAR [not null, ref: > dim_airline.airline_id]
-  airport_id VARCHAR [not null, ref: > dim_airport.airport_id]
+  arrival_airport_id VARCHAR [not null, ref: > dim_airport.airport_id]
+  departure_airport_id VARCHAR [not null, ref: > dim_airport.airport_id]
   date_id VARCHAR [not null, ref: > dim_date.date_id]
-  flight_id VARCHAR(6) [not null]                      //flight_id
-  departure_airport VARCHAR [not null]                 //departure_airport_english  
-  via_destinations BOOL [not null]                     //arrivals__via_destinations   
-  remarks VARCHAR                                      //arrival__remarks_english
-  di_indicator VARCHAR(1) [not null]                   //di_indicator , (domestic (D), international (I) or Schengen (S))
-  arrival_time_scheduled_utc DATETIME [not null]       //arrival_time__schedule_utc
-  arrival_time_estimated_utc DATETIME                  //arrival_time_estimated_utc
-  arrival_time_actual_utc DATETIME                     //arrival_time__actual_utc
-  arrival_airport VARCHAR(3) [not null]                //airport
-  terminal VARCHAR(2)                                  //location_and_status__terminal
+  flight_id VARCHAR(6) [not null] //flight_id
+  via_destinations BOOL [not null] //arrivals__via_destinations   
+  di_indicator VARCHAR(1) [not null] //di_indicator , (domestic (D), international (I) or Schengen (S))
+  arrival_time_scheduled_utc DATETIME [not null] //arrival_time__schedule_utc
+  arrival_time_estimated_utc DATETIME //arrival_time_estimated_utc
+  arrival_time_actual_utc DATETIME //arrival_time__actual_utc
+  terminal VARCHAR(2) //location_and_status__terminal
 }
 
 Table fct_departures {
-  fct_departures_id VARCHAR [primary key, unique]
   airline_id VARCHAR [not null, ref: > dim_airline.airline_id]
-  airport_id VARCHAR [not null, ref: > dim_airport.airport_id]
+  arrival_airport_id VARCHAR [not null, ref: > dim_airport.airport_id]
+  departure_airport_id VARCHAR [not null, ref: > dim_airport.airport_id]
   date_id VARCHAR [not null, ref: > dim_date.date_id]
-  flight_id VARCHAR(6) [not null]                      //flight_id
-  arrival_airport VARCHAR [not null]                   //arrival_airport_english 
-  via_destinations BOOL [not null]                     //departures__via_destinations   
-  remarks VARCHAR                                      //departure__remarks_english
-  di_indicator VARCHAR(1) [not null]                   //di_indicator , (domestic (D), international (I) or Schengen (S))
-  departure_time_scheduled_utc DATETIME [not null]     //departure_time__schedule_utc
-  departure_time_estimated_utc DATETIME                //departure_time_estimated_utc
-  departure_time_actual_utc DATETIME                   //departure_time__actual_utc
-  departure_airport VARCHAR(3) [not null]              //airport
-  terminal VARCHAR(2)                                  //location_and_status__terminal
+  flight_id VARCHAR(6) [not null] //flight_id
+  via_destinations BOOL [not null] //departures__via_destinations   
+  di_indicator VARCHAR(1) [not null] //di_indicator , (domestic (D), international (I) or Schengen (S))
+  departure_time_scheduled_utc DATETIME [not null] //departure_time__schedule_utc
+  departure_time_estimated_utc DATETIME //departure_time_estimated_utc
+  departure_time_actual_utc DATETIME //departure_time__actual_utc
+  terminal VARCHAR(2) //location_and_status__terminal
 }
 
 Table dim_airline {
