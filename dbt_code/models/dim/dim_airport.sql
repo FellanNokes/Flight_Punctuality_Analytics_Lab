@@ -1,6 +1,7 @@
-with src_airport as {{ ref('src_airport') }}
+with src_airport as ( select * from {{ ref('src_airport') }})
 
 select
+    {{ dbt_utils.generate_surrogate_key(['iata_code'])}} as airport_id,
     airport_name,
     iata_code,
     icao_code,

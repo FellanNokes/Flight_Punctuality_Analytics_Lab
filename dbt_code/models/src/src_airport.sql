@@ -1,10 +1,9 @@
-with stg_airports as({{ source('wikipedia', 'airports') }})
+with stg_airports as(select * from {{ source('wikipedia', 'airports') }})
 
 select
     airport as airport_name,
     iata_code,
     icao_code,
-    country_region as country,
     continent,
     country,
     location

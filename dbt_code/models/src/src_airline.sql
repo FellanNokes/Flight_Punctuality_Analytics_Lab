@@ -1,4 +1,4 @@
-with stg_airlines as {{ source('wikipedia', 'airlines') }}
+with stg_airlines as (select * from {{ source('wikipedia', 'airlines') }})
 
 select
     airline as airline_name,
