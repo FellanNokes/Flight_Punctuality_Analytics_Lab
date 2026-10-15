@@ -7,10 +7,7 @@ USE ROLE USERADMIN;
 
 CREATE ROLE IF NOT EXISTS flights_dlt_role;
 
--- grant role to user
-USE ROLE SECURITYADMIN;
-
-GRANT ROLE flights_dlt_role TO USER extract_loader;
+CREATE ROLE IF NOT EXISTS flights_dbt_role;
 
 
 -- grant privileges to role
@@ -31,6 +28,3 @@ SHOW FUTURE GRANTS IN SCHEMA flights.staging;
 SHOW GRANTS TO ROLE flights_dlt_role;
 SHOW GRANTS TO USER extract_loader;
 
-GRANT ROLE flights_dlt_role TO USER nokes;
-GRANT ROLE flights_dlt_role TO USER anja;
-GRANT ROLE flights_dlt_role TO USER rikard;
