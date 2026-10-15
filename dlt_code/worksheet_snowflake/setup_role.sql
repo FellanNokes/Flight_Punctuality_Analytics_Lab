@@ -7,7 +7,7 @@ USE ROLE USERADMIN;
 
 CREATE ROLE IF NOT EXISTS flights_dlt_role;
 
-
+CREATE ROLE IF NOT EXISTS flights_dbt_role;
 
 
 -- grant privileges to role
