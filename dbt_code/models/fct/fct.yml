@@ -1,0 +1,81 @@
+models:
+  - name: fct_arrivals
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - arrival_airport_id
+              - flight_id
+              - date_id
+    columns:
+      - name: date_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_id
+      - name: airline_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_airline')
+                field: airline_id
+              config:
+                severity: warn
+      - name: arrival_airport_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_airport')
+                field: airport_id
+              config:
+                severity: warn
+      - name: departure_airport_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_airport')
+                field: airport_id
+              config:
+                severity: warn
+  - name: fct_departures
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - departure_airport_id
+              - flight_id
+              - date_id
+    columns:
+      - name: date_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_id
+      - name: airline_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_airline')
+                field: airline_id
+              config:
+                severity: warn
+      - name: departure_airport_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_airport')
+                field: airport_id
+              config:
+                severity: warn
+      - name: arrival_airport_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_airport')
+                field: airport_id
+              config:
+                severity: warn

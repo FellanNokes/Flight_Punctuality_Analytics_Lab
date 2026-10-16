@@ -1,12 +1,17 @@
-with src_airline as ( select * from {{ ref('src_airline') }})
+with src_airline as (select * from {{ ref('src_airline') }})
 
 select
-    {{ dbt_utils.generate_surrogate_key(['icao_code'])}} as airline_id,
-    max(airline_name) as airline_name,
-    max(iata_code) iata_code,
+    {{ dbt_utils.generate_surrogate_key(['icao_code']) }} as airline_id,
+    airline_name,
+    iata_code,
     icao_code,
-    max(country) as country
+    country
 from src_airline
-where icao_code is not null 
-    and (comments is null or comments not ilike '%defunct%')
-group by icao_code
+where icao_code is not null
+qualify row_number() over (
+    partition by icao_code
+    order by
+        coalesce(comments, '') ilike '%defunct%',
+        iata_code is null,
+        airline_name
+) = 1

@@ -1,0 +1,53 @@
+models:
+  - name: dim_airline
+    columns:
+      - name: airline_id
+        data_tests:
+          - unique
+          - not_null
+      - name: icao_code
+        data_tests:
+          - unique
+          - not_null
+      - name: airline_name
+        data_tests:
+          - not_null
+
+  - name: dim_airport
+    columns:
+      - name: airport_id
+        data_tests:
+          - unique
+          - not_null
+      - name: iata_code
+        data_tests:
+          - unique
+          - not_null
+      - name: airport_name
+        data_tests:
+          - not_null
+
+  - name: dim_date
+    columns:
+      - name: date_id
+        data_tests:
+          - unique
+          - not_null
+      - name: date
+        data_tests:
+          - unique
+          - not_null
+      - name: month
+        data_tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 1
+                max_value: 12
+      - name: day_of_week
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      - name: is_weekend
+        data_tests:
+          - not_null
