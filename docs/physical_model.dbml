@@ -52,5 +52,4 @@ Table dim_date {
   day INTEGER [not null]
   day_of_week VARCHAR [not null]
   is_weekend BOOL [not null]
-  is_holiday BOOL [not null]
 }
