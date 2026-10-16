@@ -1,4 +1,4 @@
-with stg_via_des as (select * from {{ source('flights', 'departures_via_destinations') }})
+WITH stg_via_des AS (SELECT * FROM {{ source('flights', 'departures_via_destinations') }})
 
 SELECT
     _dlt_parent_id,
