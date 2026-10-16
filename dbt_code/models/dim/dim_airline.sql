@@ -7,3 +7,4 @@ select
     icao_code,
     country
 from src_airline
+where icao_code is not null

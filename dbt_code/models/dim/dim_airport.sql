@@ -9,3 +9,4 @@ select
     country,
     location
 from src_airport
+where iata_code is not null
