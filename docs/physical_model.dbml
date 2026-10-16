@@ -4,8 +4,8 @@ Table fct_arivals {
   departure_airport_id VARCHAR [not null, ref: > dim_airport.airport_id]
   date_id VARCHAR [not null, ref: > dim_date.date_id]
   flight_id VARCHAR(6) [not null] //flight_id
-  via_destinations BOOL [not null] //arrivals__via_destinations   
-  di_indicator VARCHAR(1) [not null] //di_indicator , (domestic (D), international (I) or Schengen (S))
+  has_via_destinations BOOL [not null] //arrivals__via_destinations   
+  type_of_flights VARCHAR(1) [not null] //di_indicator , (domestic (D), international (I) or Schengen (S))
   arrival_time_scheduled_utc DATETIME [not null] //arrival_time__schedule_utc
   arrival_time_estimated_utc DATETIME //arrival_time_estimated_utc
   arrival_time_actual_utc DATETIME //arrival_time__actual_utc
@@ -18,8 +18,8 @@ Table fct_departures {
   departure_airport_id VARCHAR [not null, ref: > dim_airport.airport_id]
   date_id VARCHAR [not null, ref: > dim_date.date_id]
   flight_id VARCHAR(6) [not null] //flight_id
-  via_destinations BOOL [not null] //departures__via_destinations   
-  di_indicator VARCHAR(1) [not null] //di_indicator , (domestic (D), international (I) or Schengen (S))
+  has_via_destinations BOOL [not null] //departures__via_destinations   
+  type_of_flights VARCHAR(1) [not null] //di_indicator , (domestic (D), international (I) or Schengen (S))
   departure_time_scheduled_utc DATETIME [not null] //departure_time__schedule_utc
   departure_time_estimated_utc DATETIME //departure_time_estimated_utc
   departure_time_actual_utc DATETIME //departure_time__actual_utc
