@@ -4,10 +4,10 @@ with arrivals AS (select * from {{ ref('src_arrivals') }}),
 via AS (select * from {{ ref('src_arrivals_via') }})
 
 select
-    {{ dbt_utils.generate_surrogate_key(['airline_icao']) }} AS airline_id,
-    {{ dbt_utils.generate_surrogate_key(['arrival_iata']) }} AS arrival_airport_id,
-    {{ dbt_utils.generate_surrogate_key(['departure_iata']) }} AS departure_airport_id,
-    {{ dbt_utils.generate_surrogate_key(['flight_date']) }} AS date_id,
+    {{ dbt_utils.generate_surrogate_key(['a.airline_icao']) }} AS airline_id,
+    {{ dbt_utils.generate_surrogate_key(['a.arrival_iata']) }} AS arrival_airport_id,
+    {{ dbt_utils.generate_surrogate_key(['a.departure_iata']) }} AS departure_airport_id,
+    {{ dbt_utils.generate_surrogate_key(['a.flight_date']) }} AS date_id,
     a.flight_id,
     CASE
         WHEN v._dlt_parent_id is not null then true
