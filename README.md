@@ -64,3 +64,15 @@ Schedules and sensors are off by default. Under **Automation**, turn on:
 - `schedule_flights`: loads flight data every other day at 12:00 Swedish time
 - `flights_loaded_sensor`: runs dbt when flight data has been loaded
 - `default_automation_condition_sensor`: loads the Wikipedia reference data once, if it has never been loaded
+
+### Docker container how to test
+
+1. Copy `.env.example` to `.env` and fill in the values
+2. Start Docker Desktop
+3. From the repo root:
+
+```bash
+   docker compose up --build -d dwh_pipeline
+```
+
+4. Open `localhost:3000` and check that all three automations are on under **Automation**
