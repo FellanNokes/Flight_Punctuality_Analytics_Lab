@@ -14,3 +14,10 @@ GRANT ROLE flights_dbt_role TO USER transformer;
 GRANT ROLE flights_dbt_role TO USER nokes;
 GRANT ROLE flights_dbt_role TO USER anja;
 GRANT ROLE flights_dbt_role TO USER rikard;
+
+-- grant reporter role
+GRANT ROLE flights_reporter_role TO USER reporter;
+
+GRANT ROLE flights_reporter_role TO USER nokes;
+GRANT ROLE flights_reporter_role TO USER anja;
+GRANT ROLE flights_reporter_role TO USER rikard;
