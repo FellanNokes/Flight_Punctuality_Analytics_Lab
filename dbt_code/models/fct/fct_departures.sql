@@ -21,10 +21,19 @@ SELECT
     d.departure_time_estimated_utc,
     d.departure_time_actual_utc,
     d.terminal,
+    DATEDIFF(minute, d.departure_time_scheduled_utc, d.departure_time_actual_utc) AS departure_delay_minutes,
     CASE
-        WHEN d.departure_time_scheduled_utc < d.departure_time_actual_utc then true
-        ELSE false
-    END AS 'departure_delayed'
+        WHEN DATEDIFF(minute, d.departure_time_scheduled_utc, d.departure_time_actual_utc) > 0 then 'Delayed'
+        ELSE 'On Time'
+    END AS departure_status,
+    CASE
+        WHEN departure_delay_minutes > 0 and departure_delay_minutes < 5 then 'less_5_min'
+        WHEN departure_delay_minutes >= 5 and departure_delay_minutes < 20 then '6_to_19'
+        WHEN departure_delay_minutes >= 20 and departure_delay_minutes < 60 then '20_to_59'
+        WHEN departure_delay_minutes >= 60 and departure_delay_minutes < 180 then '60_to_180'
+        WHEN departure_delay_minutes >= 180 then 'over_180'
+        ELSE 'On Time'
+    END AS departure_delayed_time
 FROM departures d
 LEFT JOIN via_dest v ON d._dlt_id = v._dlt_parent_id
 WHERE d.departure_time_actual_utc is not null
