@@ -236,3 +236,6 @@ EDA/data/raw/
 setup_user.sql
 setup_service_acc.sql
 test_connect.py
+
+# dagster
+.dagster_home/
