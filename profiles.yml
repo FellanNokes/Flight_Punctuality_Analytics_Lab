@@ -1,0 +1,14 @@
+dbt_flights:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: extract_loader
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: flights_dlt_role
+      database: flights
+      warehouse: flights_wh
+      schema: warehouse
+      threads: 1
+      client_session_keep_alive: False
