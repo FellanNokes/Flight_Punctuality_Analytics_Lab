@@ -20,6 +20,11 @@ SELECT
     d.departure_time_scheduled_utc,
     d.departure_time_estimated_utc,
     d.departure_time_actual_utc,
-    d.terminal
+    d.terminal,
+    CASE
+        WHEN d.departure_time_scheduled_utc < d.departure_time_actual_utc then true
+        ELSE false
+    END AS 'departure_delayed'
 FROM departures d
 LEFT JOIN via_dest v ON d._dlt_id = v._dlt_parent_id
+WHERE d.departure_time_actual_utc is not null
