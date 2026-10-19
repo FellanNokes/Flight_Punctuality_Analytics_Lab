@@ -12,7 +12,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).parents[1]
 
-# Tell dlt where .dlt/ (secrets.toml) lives. Must be set before dlt is imported.
+# Tell dlt where .dlt/ (config.toml, secrets.toml) lives. Must be set before dlt is imported.
 os.environ["DLT_PROJECT_DIR"] = str(REPO_ROOT / "dlt_code")
 
 # Make the dlt scripts importable, independent of where Dagster is started
@@ -52,13 +52,17 @@ def dlt_flights(context: dg.AssetExecutionContext, dlt: DagsterDltResource):
     yield from dlt.run(context=context)
 
 
-# Reference data should only be loaded once, so the assets get an
-# on_missing automation condition: they run if they have never been materialized
-class OnMissingTranslator(DagsterDltTranslator):
+# Reference data should only be loaded once. The assets run if they have never been
+# materialized, are not already running, and the last attempt did not fail.
+class LoadOnceTranslator(DagsterDltTranslator):
     def get_asset_spec(self, data):
         default_spec = super().get_asset_spec(data)
         return default_spec.replace_attributes(
-            automation_condition=dg.AutomationCondition.on_missing()
+            automation_condition=(
+                dg.AutomationCondition.missing()
+                & ~dg.AutomationCondition.in_progress()
+                & ~dg.AutomationCondition.execution_failed()
+            )
         )
 
 
@@ -72,7 +76,7 @@ class OnMissingTranslator(DagsterDltTranslator):
     ),
     name="wikipedia",
     group_name="reference",
-    dagster_dlt_translator=OnMissingTranslator(),
+    dagster_dlt_translator=LoadOnceTranslator(),
 )
 def dlt_wikipedia(context: dg.AssetExecutionContext, dlt: DagsterDltResource):
     yield from dlt.run(context=context)
@@ -86,7 +90,9 @@ def dlt_wikipedia(context: dg.AssetExecutionContext, dlt: DagsterDltResource):
 # needs dbt_packages pre-installed with 'dbt deps'
 
 dbt_project_directory = REPO_ROOT / "dbt_code"
-profiles_dir = Path.home() / ".dbt"
+
+# DBT_PROFILES_DIR is set in the Docker image, locally it falls back to ~/.dbt
+profiles_dir = Path(os.getenv("DBT_PROFILES_DIR", Path.home() / ".dbt"))
 
 dbt_project = DbtProject(project_dir=dbt_project_directory, profiles_dir=profiles_dir)
 
@@ -126,20 +132,34 @@ schedule_flights = dg.ScheduleDefinition(
     job=job_flights,
     cron_schedule="0 12 */2 * *",
     execution_timezone="Europe/Stockholm",
+    default_status=dg.DefaultScheduleStatus.RUNNING,
 )
 
 
 # ==================== #
 #                      #
-#        Sensor        #
+#        Sensors       #
 #                      #
 # ==================== #
 
 # Run dbt when the flight data has been loaded.
 # Arrivals and departures are loaded in the same run, so watching one is enough.
-@dg.asset_sensor(asset_key=dg.AssetKey("dlt_flights_source_departures"), job_name="job_dbt")
+@dg.asset_sensor(
+    asset_key=dg.AssetKey("dlt_flights_source_departures"),
+    job_name="job_dbt",
+    default_status=dg.DefaultSensorStatus.RUNNING,
+)
 def flights_loaded_sensor():
     yield dg.RunRequest()
+
+
+# Evaluates the load-once condition on the Wikipedia assets.
+# Replaces Dagster's default_automation_condition_sensor.
+reference_once_sensor = dg.AutomationConditionSensorDefinition(
+    name="load_reference_once_sensor",
+    target=dg.AssetSelection.assets(dlt_wikipedia),
+    default_status=dg.DefaultSensorStatus.RUNNING,
+)
 
 
 # ==================== #
@@ -156,5 +176,5 @@ defs = dg.Definitions(
     },
     jobs=[job_flights, job_wikipedia, job_dbt],
     schedules=[schedule_flights],
-    sensors=[flights_loaded_sensor],
+    sensors=[flights_loaded_sensor, reference_once_sensor],
 )
