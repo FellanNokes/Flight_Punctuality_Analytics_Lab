@@ -4,9 +4,9 @@ dbt_flights:
     dev:
       type: snowflake
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
-      user: extract_loader
-      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
-      role: flights_dlt_role
+      user: transformer
+      password: "{{ env_var('SNOWFLAKE_USER_TRANSFORMER_PASSWORD') }}"
+      role: flights_dbt_role
       database: flights
       warehouse: flights_wh
       schema: warehouse
