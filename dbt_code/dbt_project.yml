@@ -52,6 +52,7 @@ models:
 
     mart:
       +schema: marts
+      +materialized: view
       +meta:
         dagster:
           group: marts
