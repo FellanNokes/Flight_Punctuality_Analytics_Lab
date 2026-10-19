@@ -1,0 +1,5 @@
+[destination.snowflake.credentials]
+database = "FLIGHTS"
+username = "extract_loader"
+warehouse = "FLIGHTS_WH"
+role = "FLIGHTS_DLT_ROLE"
