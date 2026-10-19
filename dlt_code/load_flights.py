@@ -1,6 +1,5 @@
 import os
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 
 import dlt
 import requests
@@ -87,12 +86,3 @@ def departures_resource():
 @dlt.source
 def flights_source():
     return [arrivals_resource(), departures_resource()]
-
-
-def run_pipeline():
-    pipeline = dlt.pipeline(
-        pipeline_name="swedavia_flights", destination="snowflake", dataset_name="staging"
-    )
-
-    load_info = pipeline.run(flights_source())
-    print(load_info)
