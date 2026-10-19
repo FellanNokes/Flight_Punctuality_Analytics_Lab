@@ -232,7 +232,10 @@ __marimo__/
 EDA/data/raw/
 
 # dlthub
-.dlt
+**/.dlt/secrets.toml
 setup_user.sql
 setup_service_acc.sql
 test_connect.py
+
+# dagster
+.dagster_home/

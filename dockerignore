@@ -1,0 +1,7 @@
+.venv
+.env
+**/.dlt/secrets.toml
+.dagster_home
+**/target
+**/dbt_packages
+**/__pycache__

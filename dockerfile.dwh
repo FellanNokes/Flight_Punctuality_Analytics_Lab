@@ -1,0 +1,27 @@
+FROM python:3.13
+
+ENV DBT_PROFILES_DIR=/pipeline
+ENV UV_NO_SYNC=1
+
+WORKDIR /pipeline
+
+# Install dependencies first, so this layer is cached when only code changes
+COPY pyproject.toml uv.lock ./
+RUN pip install --no-cache-dir uv
+RUN uv sync --frozen --no-dev --no-install-project
+
+# Project code
+COPY dlt_code/ ./dlt_code/
+COPY dbt_code/ ./dbt_code/
+COPY orchestration/ ./orchestration/
+COPY profiles.yml ./profiles.yml
+
+# dbt packages (dbt_utils)
+WORKDIR /pipeline/dbt_code
+RUN uv run dbt deps
+
+# Dagster home, overridden by DAGSTER_HOME in docker-compose
+WORKDIR /pipeline
+RUN mkdir -p .dagster_home && touch .dagster_home/dagster.yaml
+
+CMD ["uv", "run", "dagster", "dev", "-f", "orchestration/definitions.py", "-h", "0.0.0.0", "-p", "3000"]

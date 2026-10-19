@@ -9,6 +9,10 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "beautifulsoup4>=4.15.0",
+    "dagster>=1.13.26",
+    "dagster-dbt>=0.29.26",
+    "dagster-dlt>=0.29.26",
+    "dagster-webserver>=1.13.26",
     "dbt-core>=1.12.6",
     "dbt-snowflake>=1.12.3",
     "dlt[parquet,snowflake]>=1.31.0",
