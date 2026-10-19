@@ -1,29 +1,24 @@
-WITH fct_dep AS (SELECT * FROM {{ ref('fct_departures') }})
-dim_date AS (SELECT * FROM {{ ref('dim_date') }}),
-dim_port AS (SELECT * FROM {{ ref('dim_airport') }}),
-dim_line AS (SELECT * FROM {{ ref('dim_airline') }}),
+with 
+    fct_departures as (select * from {{ ref('fct_departures') }}),
+    dim_airline as (select * from {{ ref('dim_airline') }}),
+    dim_airport as (select * from {{ ref('dim_airport') }}),
+    dim_date as (select * from {{ ref('dim_date') }})
 
-SELECT
-    f.airline_id,
-    f.arrival_airport_id,
-    f.departure_airport_id,
-    f.date_id,
-    d.date,
-    d.year,
-    d.month,
-    d.day,
-    d.day_of_week,
-    d.is_weekend,
-    flight_id,
-    has_via_destination,
-    type_of_flight,
-    departure_time_scheduled_utc,
-    departure_time_estimated_utc,
-    departure_time_actual_utc,
-    terminal
 
-FROM fct_dep f
-LEFT JOIN dim_date d ON f.date_id = d.date_id
-LEFT JOIN dim_port p ON f.departure_airport_id = p.airport_id
-LEFT JOIN dim_port p ON f.arrival_airport_id = p.airport_id
-LEFT JOIN dim_line l ON f.airline_id = l.airline_id
+select
+    ap.airport_name,
+    COUNT(*) as amount_of_flights,
+    sum(CASE WHEN de.departure_status = 'Delayed' then 1 else 0 END) as amount_delayed_flights_departures,
+    sum(CASE WHEN de.departure_status = 'On Time' then 1 else 0 END) as amount_not_delayed_departure,
+    al.airline_name,
+    de.departure_delayed_time,
+    d.date
+from fct_departures de
+left join dim_airline al on de.airline_id = al.airline_id
+left join dim_airport ap on de.departure_airport_id = ap.airport_id
+left join dim_date d on de.date_id = d.date_id
+group by
+    ap.airport_name,
+    al.airline_name,
+    de.departure_delayed_time,
+    d.date
