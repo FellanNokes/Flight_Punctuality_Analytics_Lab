@@ -6,11 +6,13 @@ import dlt
 import requests
 from dotenv import load_dotenv
 
+# Empty the staging_staging schema after each merge load
+dlt.config["load.truncate_staging_dataset"] = True
+
 BASE_URL = "https://api.swedavia.se/flightinfo/v2"
 
 # Swedavia airports (section 1.3.1 in the docs)
 AIRPORTS = ["ARN", "BMA", "GOT", "MMX", "LLA", "UME", "OSD", "VBY", "RNB", "KRN"]
-FLIGHT_TYPES = ("arrivals", "departures")
 
 # The API only accepts dates 2 days back (tested, the docs say 7)
 DAYS_BACK = 2
@@ -42,8 +44,8 @@ def _dates_to_fetch_utc(days_back):
     return [today - timedelta(days=d) for d in range(days_back, -1, -1)]
 
 
-@dlt.resource(write_disposition="merge", primary_key="flight_key")
-def flights_resource(flight_type, days_back=DAYS_BACK):
+def _fetch_flights(flight_type, days_back=DAYS_BACK):
+    """Yield all flights of one type (arrivals or departures) for all airports and dates."""
     headers = _get_headers()
 
     for flight_date in _dates_to_fetch_utc(days_back):
@@ -71,18 +73,26 @@ def flights_resource(flight_type, days_back=DAYS_BACK):
                 }
 
 
+@dlt.resource(name="arrivals", write_disposition="merge", primary_key="flight_key")
+def arrivals_resource():
+    yield from _fetch_flights("arrivals")
+
+
+@dlt.resource(name="departures", write_disposition="merge", primary_key="flight_key")
+def departures_resource():
+    yield from _fetch_flights("departures")
+
+
+# Dagster only works with dlt sources, not resources
+@dlt.source
+def flights_source():
+    return [arrivals_resource(), departures_resource()]
+
+
 def run_pipeline():
     pipeline = dlt.pipeline(
         pipeline_name="swedavia_flights", destination="snowflake", dataset_name="staging"
     )
 
-    for flight_type in FLIGHT_TYPES:
-        load_info = pipeline.run(flights_resource(flight_type), table_name=flight_type)
-        print(load_info)
-
-
-if __name__ == "__main__":
-    working_directory = Path(__file__).parent
-    os.chdir(working_directory)
-
-    run_pipeline()
+    load_info = pipeline.run(flights_source())
+    print(load_info)
