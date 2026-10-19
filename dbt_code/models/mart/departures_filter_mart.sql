@@ -1,15 +1,15 @@
 with 
     fct_departures as (select * from {{ ref('fct_departures') }}),
-    dim_airlines as (select * from {{ ref('dim_airline') }}),
-    dim_airports as (select * from {{ ref('dim_airport') }}),
+    dim_airline as (select * from {{ ref('dim_airline') }}),
+    dim_airport as (select * from {{ ref('dim_airport') }}),
     dim_date as (select * from {{ ref('dim_date') }})
 
 
 select
     ap.airport_name,
     COUNT(*) as amount_of_flights,
-    sum(CASE WHEN f.departure_status = 'Delayed' then 1 else 0) as amount_delayed_departures,
-    sum(CASE WHEN f.departure_status = 'On Time' then 1 else 0) as amount_not_delayed_departure,
+    sum(CASE WHEN f.departure_status = 'Delayed' then 1 else 0 END) as amount_delayed_departures,
+    sum(CASE WHEN f.departure_status = 'On Time' then 1 else 0 END) as amount_not_delayed_departure,
     al.airline_name,
     CASE
         WHEN EXTRACT(HOUR FROM f.departure_time_scheduled_utc) <= 6 THEN 'night'
