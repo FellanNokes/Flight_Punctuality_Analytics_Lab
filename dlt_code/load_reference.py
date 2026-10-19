@@ -12,7 +12,7 @@ wikipedia_url = "https://en.wikipedia.org/wiki"
 def get_airports():
     airport_url = f"{wikipedia_url}/List_of_international_airports_by_country"
 
-    headers = {"User-Agent": "airport-codes-scraper/0.1 (your@email.com)"}
+    headers = {"User-Agent": "airport-codes-scraper/0.1 (https://github.com/FellanNokes/Flight_Punctuality_Analytics_Lab)"}
     airport_resp = requests.get(airport_url, headers=headers, timeout=30)
     airport_resp.raise_for_status()
 
@@ -36,7 +36,7 @@ def get_airports():
 def get_airlines():
     airlines_url = f"{wikipedia_url}/List_of_airline_codes"
 
-    headers = {"User-Agent": "airline-codes-scraper/0.1 (your@email.com)"}
+    headers = {"User-Agent": "airline-codes-scraper/0.1 (https://github.com/FellanNokes/Flight_Punctuality_Analytics_Lab)"}
     resp = requests.get(airlines_url, headers=headers, timeout=30)
     resp.raise_for_status()
     tables = pd.read_html(StringIO(resp.text))
@@ -45,18 +45,6 @@ def get_airlines():
 
     yield df_airlines
 
-
-def run_pipelines():
-    pipeline = dlt.pipeline(
-        pipeline_name="wikipedia",
-        destination="snowflake",
-        dataset_name="staging"
-    )
-
-    load_info = pipeline.run([get_airports(), get_airlines()])
-
-    print(load_info)
-
-
-if __name__ == "__main__":
-    run_pipelines()
+@dlt.source
+def wikipedia_source():
+    return [get_airports(), get_airlines()]
