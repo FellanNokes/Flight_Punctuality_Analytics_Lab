@@ -36,4 +36,5 @@ group by
     ap.continent,
     ap.country,
     f.arrival_delayed_time,
-    d.day_of_week
+    d.day_of_week,
+    d.date
