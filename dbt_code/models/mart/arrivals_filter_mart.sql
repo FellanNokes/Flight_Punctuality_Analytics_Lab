@@ -26,7 +26,7 @@ select
     d.date
 from fct_arrivals f
 left join dim_airline al on f.airline_id = al.airline_id
-left join dim_airport ap on f.arrival_airport_id = ap.airport_id
+left join dim_airport ap on f.departure_airport_id = ap.airport_id
 left join dim_date d on f.date_id = d.date_id
 group by
     ap.airport_name,
