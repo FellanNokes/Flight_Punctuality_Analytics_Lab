@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # The marts the dashboard is allowed to read (table names in the mart schema). If you create a new mart you need to add it here
-MARTS = ["arrivals_filter_mart", "departures_filter_mart"]
+MARTS = ["arrivals_filter_mart", "departures_filter_mart", "basic_arrivals", "basic_departures"]
 
 def _connect():
     return snowflake.connector.connect(
