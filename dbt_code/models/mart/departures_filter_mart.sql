@@ -22,7 +22,8 @@ select
     ap.continent,
     ap.country,
     f.departure_delayed_time,
-    d.day_of_week
+    d.day_of_week,
+    d.date
 from fct_departures f
 left join dim_airline al on f.airline_id = al.airline_id
 left join dim_airport ap on f.departure_airport_id = ap.airport_id
