@@ -1,6 +1,7 @@
 import streamlit as st
 from connect_data_warehouse import query_mart
 from pathlib import Path
+import matplotlib.pyplot as plt
 
 ASSETS_PATH = Path(__file__).parents[1] / "assets"
 
@@ -52,6 +53,19 @@ def layout_arrivals_overview():
             label="On Time Arrivals",
             value=filtered_df["AMOUNT_NOT_DELAYED_ARRIVAL"].sum()
         )
+
+    pie_df = filtered_df[filtered_df["ARRIVAL_DELAYED_TIME"] != "On Time"]
+
+    counts = pie_df["ARRIVAL_DELAYED_TIME"].value_counts()
+    arrival_delayed_time_options = pie_df["ARRIVAL_DELAYED_TIME"].unique().tolist()
+
+    if counts.empty:
+        st.warning("No delayed flights for the selected airport.")
+    else:
+        fig, ax = plt.subplots()
+        pie = ax.pie(counts, labels=arrival_delayed_time_options)
+        ax.pie_label(pie, counts)
+        st.pyplot(fig)
 
 if __name__ == "__main__":
     layout_arrivals_overview()
