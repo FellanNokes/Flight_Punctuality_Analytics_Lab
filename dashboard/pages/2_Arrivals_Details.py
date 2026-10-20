@@ -42,7 +42,8 @@ def layout_arrivals_overview():
         filtered_df = filter_selectbox("Choose airline", filtered_df, "AIRLINE_NAME")
 
         filtered_df = filter_selectbox("Choose continent", filtered_df, "CONTINENT")
-        
+
+    
     with cols[1]:
         st.metric(
             label="Delayed arrivals",
@@ -51,8 +52,8 @@ def layout_arrivals_overview():
 
         filtered_df = filter_selectbox("Choose time period", filtered_df, "TIME_PERIOD")
         
-
         filtered_df = filter_selectbox("Choose country", filtered_df, "COUNTRY")
+
 
     with cols[2]:
         st.metric(
@@ -62,11 +63,13 @@ def layout_arrivals_overview():
 
         filtered_df = filter_selectbox("Choose travel zone", filtered_df, "TYPE_OF_FLIGHT")
 
+
     with cols[3]:
         st.metric(
             label="On Time Arrivals",
             value=filtered_df["AMOUNT_NOT_DELAYED_ARRIVAL"].sum()
         )
+
 
     cols2 = st.columns(2)
 
@@ -88,7 +91,6 @@ def layout_arrivals_overview():
 
     with cols2[1]:
         st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
-
 
 
 
