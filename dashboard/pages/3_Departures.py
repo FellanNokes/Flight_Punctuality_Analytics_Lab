@@ -15,7 +15,7 @@ def layout_departures_overview():
 
     st.image(ASSETS_PATH / "img" / "Departures_v1.png", width='stretch')
 
-    st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
+    st.info(body="The Departure Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
 
     airport_options = ["All airports"] + df["AIRPORT_NAME"].unique().tolist()
 
@@ -24,11 +24,25 @@ def layout_departures_overview():
         options=airport_options
     )
 
+    min_date = df["DATE"].min()
+    max_date = df["DATE"].max()
+        
+    selected_dates = st.slider(
+        label="Choose date range",
+        min_value=min_date,
+        max_value=max_date,
+        value=(min_date, max_date)
+        )
+
     if selected_airport == "All airports":
         filtered_df = df
     else:
         filtered_df = df[df["AIRPORT_NAME"] == selected_airport]
 
+    filtered_df = filtered_df[
+        (filtered_df["DATE"] >= selected_dates[0]) & 
+        (filtered_df["DATE"] <= selected_dates[1])
+    ]
     
     cols = st.columns(4)
 
