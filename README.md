@@ -147,3 +147,77 @@ To keep it running: **Application** → **Scale** → set **Min replicas** and *
 **Watch your credits.** A container that is always on costs money every hour, even when nobody uses it. Use the smallest size (0.25 CPU, 0.5 GB), check the cost under **Cost Management** now and then, and set Min replicas back to **0** (or stop the app) when the lab is over, so the credits do not run out.
 
 **Known limitation:** `DAGSTER_HOME` lives inside the container. When the container restarts, run history is lost and the Wikipedia data is loaded again. This can be fixed by mounting an Azure File Share at `/pipeline/.dagster_home`.
+
+## Deploy the dashboard to Azure
+
+The Streamlit dashboard runs as a container in **Azure App Service** (Web App). The image is stored in the same Container Registry as the pipeline.
+
+### 1. Push the image
+
+From the repo root, with Docker Desktop running:
+
+```bash
+docker login crflightpunctuality.azurecr.io
+docker compose build dashboard
+docker compose push dashboard
+```
+
+### 2. Create the web app
+
+In the Azure portal: **App Services** → **Create** → **Web App**.
+
+**Basics**
+- Resource group: `rg-flight-punctuality`
+- Name: e.g. `fpa-dashboard`
+- Publish: **Container**
+- Operating system: **Linux**
+
+**Container**
+- Image source: **Azure Container Registry**
+- Registry: `crflightpunctuality`, image: `dashboard`, tag: the version you pushed
+
+**Review + create** → **Create**.
+
+### 3. Settings
+
+In the web app: **Settings** → **Environment variables** → **App settings**, add:
+
+| Name | Value |
+|---|---|
+| `WEBSITES_PORT` | `8501` |
+| `SNOWFLAKE_ACCOUNT` | from `.env` |
+| `SNOWFLAKE_USER` | `reporter` |
+| `SNOWFLAKE_PASSWORD` | from `.env` |
+| `SNOWFLAKE_WAREHOUSE` | `FLIGHTS_WH` |
+| `SNOWFLAKE_DATABASE` | `FLIGHTS` |
+| `SNOWFLAKE_SCHEMA` | `MARTS` |
+| `SNOWFLAKE_ROLE` | `FLIGHTS_REPORTER_ROLE` |
+
+**Apply** and confirm. The app restarts.
+
+Then **Configuration** → **General settings** → **Web sockets: On** → **Save**. Streamlit needs web sockets.
+
+### 4. Open the dashboard
+
+**Overview** → click **Default domain**. The first load can take 20 to 30 seconds.
+
+### Deploy a new version
+
+Use a new tag for every version, e.g. `v2`, `v3`:
+
+1. Change the tag in `docker-compose.yml`: `image: crflightpunctuality.azurecr.io/dashboard:v2`
+2. Build and push:
+
+```bash
+   docker compose build dashboard
+   docker compose push dashboard
+```
+
+3. In the web app: **Deployment Center** → change the tag to `v2` → **Save**
+
+### Troubleshooting
+
+- **503 and the container stops after about 4 minutes:** Azure cannot reach the app. Check that the setting is spelled exactly `WEBSITES_PORT` (with an S) and the value is `8501`.
+- **Page loads but stays blank or spins forever:** turn on **Web sockets**.
+- **No quotes in values.** Quotes become part of the value in Azure.
+- **Old code after a push:** use a new image tag instead of `latest`. With `latest`, Azure may keep the image it already has.
