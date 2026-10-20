@@ -30,44 +30,21 @@ def layout_arrivals_overview():
 
     filtered_df = filter_selectbox("Choose swedish airport", df, "SWEDISH_AIRPORT_NAME")
 
+    metrics_area = st.container()
+    with metrics_area:
+        metrics_cols = st.columns(4) 
+
     
     cols = st.columns(4)
 
     with cols[0]:
-        st.metric(
-            label="Amount of arrivals",
-            value=filtered_df["AMOUNT_OF_FLIGHTS"].sum()
-        )
-
         filtered_df = filter_selectbox("Choose airline", filtered_df, "AIRLINE_NAME")
-
     
     with cols[1]:
-        st.metric(
-            label="Delayed arrivals",
-            value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()
-        )
-
         filtered_df = filter_selectbox("Choose time period", filtered_df, "TIME_PERIOD")
         
-
-
     with cols[2]:
-        st.metric(
-            label="Delayed arrivals (%)",
-            value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum(),
-            format="percent"
-        )
-
         filtered_df = filter_selectbox("Choose travel zone", filtered_df, "TYPE_OF_FLIGHT")
-
-
-    with cols[3]:
-        st.metric(
-            label="On Time Arrivals",
-            value=filtered_df["AMOUNT_NOT_DELAYED_ARRIVAL"].sum()
-        )
-
 
     with cols[0]:
         filtered_df = filter_selectbox("Choose departure continent", filtered_df, "DEPARTURE_CONTINENT")
@@ -98,6 +75,32 @@ def layout_arrivals_overview():
     with cols2[1]:
         st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
 
+
+    with metrics_area:
+        with metrics_cols[0]:
+            st.metric(
+                label="Amount of arrivals",
+                value=filtered_df["AMOUNT_OF_FLIGHTS"].sum()
+            )
+
+        with metrics_cols[1]:
+            st.metric(
+                label="Delayed arrivals",
+                value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()
+            )
+
+        with metrics_cols[2]:
+            st.metric(
+                label="Delayed arrivals (%)",
+                value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum(),
+                format="percent"
+            )
+
+        with metrics_cols[3]:
+            st.metric(
+                label="On Time Arrivals",
+                value=filtered_df["AMOUNT_NOT_DELAYED_ARRIVAL"].sum()
+            )
 
 
     sort_days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
