@@ -31,6 +31,22 @@ def layout_departures_overview():
 
     filtered_df = filter_selectbox("Choose swedish airport", df, "SWEDISH_AIRPORT_NAME")
 
+
+    min_date = filtered_df["DATE"].min()
+    max_date = filtered_df["DATE"].max()
+            
+    selected_dates = st.slider(
+        label="Choose date range",
+        min_value=min_date,
+        max_value=max_date,
+        value=(min_date, max_date)
+        )
+
+    filtered_df = filtered_df[
+            (filtered_df["DATE"] >= selected_dates[0]) & 
+            (filtered_df["DATE"] <= selected_dates[1])
+        ]
+
     
     metrics_area = st.container()
     with metrics_area:
