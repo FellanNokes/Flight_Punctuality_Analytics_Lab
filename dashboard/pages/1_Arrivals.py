@@ -25,12 +25,11 @@ def layout_arrivals_overview():
     )
 
     if selected_airport == "All airports":
-        filtered_df = df["AIRPORT_NAME"]
+        filtered_df = df
     else:
         filtered_df = df[df["AIRPORT_NAME"] == selected_airport]
 
-    filtered_df = df[df["AIRPORT_NAME"] == selected_airport]
-
+    
     cols = st.columns(4)
 
     with cols[0]:
@@ -54,18 +53,43 @@ def layout_arrivals_overview():
             value=filtered_df["AMOUNT_NOT_DELAYED_ARRIVAL"].sum()
         )
 
-    pie_df = filtered_df[filtered_df["ARRIVAL_DELAYED_TIME"] != "On Time"]
+    cols2 = st.columns(2)
 
-    counts = pie_df["ARRIVAL_DELAYED_TIME"].value_counts()
-    arrival_delayed_time_options = pie_df["ARRIVAL_DELAYED_TIME"].unique().tolist()
+    with cols2[0]:
 
-    if counts.empty:
-        st.warning("No delayed flights for the selected airport.")
-    else:
-        fig, ax = plt.subplots()
-        pie = ax.pie(counts, labels=arrival_delayed_time_options)
-        ax.pie_label(pie, counts)
-        st.pyplot(fig)
+        pie_df = filtered_df[filtered_df["ARRIVAL_DELAYED_TIME"] != "On Time"]
+
+        counts = pie_df["ARRIVAL_DELAYED_TIME"].value_counts()
+        arrival_delayed_time_options = pie_df["ARRIVAL_DELAYED_TIME"].unique().tolist()
+
+        if counts.empty:
+            st.warning("No delayed flights for the selected airport.")
+        else:
+            fig, ax = plt.subplots()
+            pie = ax.pie(counts, labels=arrival_delayed_time_options)
+            ax.pie_label(pie, counts)
+            st.pyplot(fig)
+
+
+    with cols2[1]:
+        st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
+
+
+    #top_5_df = df.nlargest(5, "AMOUNT_DELAYED_FLIGHTS_ARRIVALS").set_index(df["AIRLINE_NAME"])
+    #top_5_df = df.sort_values(by="AMOUNT_DELAYED_FLIGHTS_ARRIVALS", ascending=False).head(5)
+
+    top_5_df = (
+        df.groupby("AIRLINE_NAME", as_index=False)["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"]
+        .sum()
+        .nlargest(5, "AMOUNT_DELAYED_FLIGHTS_ARRIVALS")
+    )
+  
+    st.bar_chart(
+        top_5_df,
+        x="AIRLINE_NAME",
+        y="AMOUNT_DELAYED_FLIGHTS_ARRIVALS",
+        sort="-AMOUNT_DELAYED_FLIGHTS_ARRIVALS"       
+        )
 
 if __name__ == "__main__":
     layout_arrivals_overview()
