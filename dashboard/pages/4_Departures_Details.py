@@ -20,7 +20,7 @@ def filter_selectbox(label, df, column):
         return df
     return df[df[column] == choice]
 
-# Arrivals overview
+# Departures overview
 def layout_departures_overview():
     df = load_departures()
 
@@ -29,48 +29,31 @@ def layout_departures_overview():
     st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
 
 
-    filtered_df = filter_selectbox("Choose swedish airport", df, "AIRPORT_NAME")
+    filtered_df = filter_selectbox("Choose swedish airport", df, "SWEDISH_AIRPORT_NAME")
 
     
+    metrics_area = st.container()
+    with metrics_area:
+        metrics_cols = st.columns(4) 
+
+
     cols = st.columns(4)
 
     with cols[0]:
-        st.metric(
-            label="Amount of departures",
-            value=filtered_df["AMOUNT_OF_FLIGHTS"].sum()
-        )
-
         filtered_df = filter_selectbox("Choose airline", filtered_df, "AIRLINE_NAME")
 
-        filtered_df = filter_selectbox("Choose continent", filtered_df, "CONTINENT")
-
-    
     with cols[1]:
-        st.metric(
-            label="Delayed departures",
-            value=filtered_df["AMOUNT_DELAYED_DEPARTURES"].sum()
-        )
-
         filtered_df = filter_selectbox("Choose time period", filtered_df, "TIME_PERIOD")
-        
-        filtered_df = filter_selectbox("Choose country", filtered_df, "COUNTRY")
-
 
     with cols[2]:
-        st.metric(
-            label="Delayed departures (%)",
-            value=filtered_df["AMOUNT_DELAYED_DEPARTURES"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum(),
-            format="percent"
-        )
-
         filtered_df = filter_selectbox("Choose travel zone", filtered_df, "TYPE_OF_FLIGHT")
 
+    with cols[0]:
+        filtered_df = filter_selectbox("Choose arrival continent", filtered_df, "ARRIVAL_CONTINENT")
 
-    with cols[3]:
-        st.metric(
-            label="On Time Departures",
-            value=filtered_df["AMOUNT_NOT_DELAYED_DEPARTURE"].sum()
-        )
+    with cols[1]:
+        filtered_df = filter_selectbox("Choose arrival country", filtered_df, "ARRIVAL_COUNTRY")
+
 
 
     cols2 = st.columns(2)
@@ -90,9 +73,36 @@ def layout_departures_overview():
             ax.pie_label(pie, counts)
             st.pyplot(fig)
 
-
     with cols2[1]:
         st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
+        
+
+
+    with metrics_area:
+        with metrics_cols[0]:
+            st.metric(
+                label="Amount of departures",
+                value=filtered_df["AMOUNT_OF_FLIGHTS"].sum()
+            )
+
+        with metrics_cols[1]:
+            st.metric(
+                label="Delayed departures",
+                value=filtered_df["AMOUNT_DELAYED_DEPARTURES"].sum()
+            )
+
+        with metrics_cols[2]:
+            st.metric(
+                label="Delayed departures (%)",
+                value=filtered_df["AMOUNT_DELAYED_DEPARTURES"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum(),
+                format="percent"
+            )
+
+        with metrics_cols[3]:
+            st.metric(
+                label="On Time Departures",
+                value=filtered_df["AMOUNT_NOT_DELAYED_DEPARTURE"].sum()
+            )
 
 
 
