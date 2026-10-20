@@ -30,7 +30,7 @@ select
     END AS arrival_status,
     CASE
         WHEN arrival_delay_minutes > 0 and arrival_delay_minutes < 5 then 'less_5_min'
-        WHEN arrival_delay_minutes >= 5 and arrival_delay_minutes < 20 then '6_to_19'
+        WHEN arrival_delay_minutes >= 5 and arrival_delay_minutes < 20 then '5_to_19'
         WHEN arrival_delay_minutes >= 20 and arrival_delay_minutes < 60 then '20_to_59'
         WHEN arrival_delay_minutes >= 60 and arrival_delay_minutes < 180 then '60_to_180'
         WHEN arrival_delay_minutes >= 180 then 'over_180'
