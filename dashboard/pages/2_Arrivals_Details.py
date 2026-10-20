@@ -28,7 +28,7 @@ def layout_arrivals_overview():
     st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
 
 
-    filtered_df = filter_selectbox("Choose swedish airport", df, "AIRPORT_NAME")
+    filtered_df = filter_selectbox("Choose swedish airport", df, "SWEDISH_AIRPORT_NAME")
 
     
     cols = st.columns(4)
@@ -41,8 +41,6 @@ def layout_arrivals_overview():
 
         filtered_df = filter_selectbox("Choose airline", filtered_df, "AIRLINE_NAME")
 
-        filtered_df = filter_selectbox("Choose continent", filtered_df, "CONTINENT")
-
     
     with cols[1]:
         st.metric(
@@ -52,13 +50,13 @@ def layout_arrivals_overview():
 
         filtered_df = filter_selectbox("Choose time period", filtered_df, "TIME_PERIOD")
         
-        filtered_df = filter_selectbox("Choose country", filtered_df, "COUNTRY")
 
 
     with cols[2]:
         st.metric(
             label="Delayed arrivals (%)",
-            value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum()
+            value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum(),
+            format="percent"
         )
 
         filtered_df = filter_selectbox("Choose travel zone", filtered_df, "TYPE_OF_FLIGHT")
@@ -69,6 +67,14 @@ def layout_arrivals_overview():
             label="On Time Arrivals",
             value=filtered_df["AMOUNT_NOT_DELAYED_ARRIVAL"].sum()
         )
+
+
+    with cols[0]:
+        filtered_df = filter_selectbox("Choose departure continent", filtered_df, "DEPARTURE_CONTINENT")
+
+    with cols[1]:
+        filtered_df = filter_selectbox("Choose departure country", filtered_df, "DEPARTURE_COUNTRY")
+
 
 
     cols2 = st.columns(2)
