@@ -1,0 +1,14 @@
+FROM python:3.13
+
+ENV UV_NO_SYNC=1
+
+WORKDIR /app
+
+COPY pyproject.toml uv.lock ./
+RUN pip install --no-cache-dir uv
+RUN uv sync --frozen --no-dev --no-install-project
+
+WORKDIR /app/dashboard
+COPY dashboard/ /app/dashboard/
+
+CMD ["uv", "run", "streamlit", "run", "Flights.py", "--server.port=8501", "--server.address=0.0.0.0"]

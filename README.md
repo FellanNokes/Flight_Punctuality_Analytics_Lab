@@ -76,3 +76,74 @@ Schedules and sensors are off by default. Under **Automation**, turn on:
 ```
 
 4. Open `localhost:3000` and check that all three automations are on under **Automation**
+
+
+## Deploy the Dagster pipeline to Azure
+
+The pipeline runs as a container in **Azure Container Apps**. The image is stored in **Azure Container Registry**.
+
+### 1. Push the image
+
+Get the login details in the Azure portal: **Container registries** → `crflightpunctuality` → **Access keys**. Username is `crflightpunctuality`, password is `password` from that page.
+
+From the repo root, with Docker Desktop running:
+
+```bash
+docker login crflightpunctuality.azurecr.io
+docker compose build dwh_pipeline
+docker compose push dwh_pipeline
+```
+
+### 2. Create the container app
+
+In the Azure portal: **Container Apps** → **Create**.
+
+**Basics**
+- Resource group: `rg-flight-punctuality`
+- Container app name: `flights-dagster`
+- Container Apps environment: create new, default settings
+
+**Container**
+- Uncheck **Use quickstart image**
+- Image source: **Azure Container Registry**
+- Registry: `crflightpunctuality.azurecr.io`, image: `dwh_pipeline`, tag: `latest`
+- Environment variables: `SWEDAVIA_API_KEY`, `DESTINATION__SNOWFLAKE__CREDENTIALS__HOST`, `DESTINATION__SNOWFLAKE__CREDENTIALS__PASSWORD`, `SNOWFLAKE_ACCOUNT`, `SNOWFLAKE_USER_TRANSFORMER_PASSWORD` (values from your `.env`), and `DAGSTER_HOME` = `/pipeline/.dagster_home`
+
+**Ingress**
+- Ingress: **Enabled**
+- Ingress traffic: **Accepting traffic from anywhere**
+- Target port: **3000**
+
+**Review + create** → **Create**.
+
+### 3. Open Dagster
+
+In the container app: **Overview** → click **Application Url**.
+
+### Deploy a new version
+
+```bash
+docker compose build dwh_pipeline
+docker compose push dwh_pipeline
+```
+
+Then in the container app: **Revisions and replicas** → **Create new revision** → **Create**.
+
+---
+### Troubleshooting
+
+- **Values without quotes.** In `.env` values can have quotes, but in Azure the quotes become part of the value. Paste values without `"`.
+- **Changes need a new revision.** After editing environment variables, click **Save** in the panel and then **Save as a new revision**. If a run still fails with a missing variable, **Stop** and **Start** the app on **Overview**, and run it again.
+
+### Running it all the time
+
+By default the container app scales down to zero when nobody has Dagster open. Then the schedule and sensors stop, so the flight data is not loaded at 12:00.
+
+To keep it running: **Application** → **Scale** → set **Min replicas** and **Max replicas** to **1** → **Save**.
+
+- **Min 1** keeps one container running all the time, so the schedule fires.
+- **Max 1** stops Azure from starting extra copies, which would run the same schedule twice.
+
+**Watch your credits.** A container that is always on costs money every hour, even when nobody uses it. Use the smallest size (0.25 CPU, 0.5 GB), check the cost under **Cost Management** now and then, and set Min replicas back to **0** (or stop the app) when the lab is over, so the credits do not run out.
+
+**Known limitation:** `DAGSTER_HOME` lives inside the container. When the container restarts, run history is lost and the Wikipedia data is loaded again. This can be fixed by mounting an Azure File Share at `/pipeline/.dagster_home`.
