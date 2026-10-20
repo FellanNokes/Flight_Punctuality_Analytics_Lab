@@ -60,8 +60,7 @@ def layout_arrivals_overview():
             value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum()
         )
 
-        # filtered_df = filter_selectbox("Choose travel zone", filtered_df, "TYPE_OF_FLIGHT")
-        # TODO: update marts -> departure airport -> see di_indicator
+        filtered_df = filter_selectbox("Choose travel zone", filtered_df, "TYPE_OF_FLIGHT")
 
     with cols[3]:
         st.metric(
