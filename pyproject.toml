@@ -22,10 +22,11 @@ dependencies = [
     "lxml>=6.1.3",
     "pandas>=3.0.6",
     "requests>=2.34.2",
+    "streamlit>=1.66.0",
 ]
 
-[project.scripts]
-flight-punctuality-analytics-lab = "flight_punctuality_analytics_lab:main"
+[tool.uv]
+package = false
 
 [build-system]
 requires = ["uv_build>=0.12.6,<0.13.0"]
