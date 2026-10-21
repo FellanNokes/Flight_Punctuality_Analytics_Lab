@@ -99,8 +99,8 @@ All data is filterable, so you can easily tailor the view to what you want to ex
         if counts.empty:
             st.warning("No delayed flights for the selected airport.")
         else:
-            fig, ax = plt.subplots()
-            pie = ax.pie(counts, labels=arrival_delayed_time_options)
+            fig, ax = plt.subplots(facecolor="#1A1A1A")
+            pie = ax.pie(counts, labels=arrival_delayed_time_options, textprops={'color': 'white'})
             ax.pie_label(pie, counts)
             st.pyplot(fig)
 
