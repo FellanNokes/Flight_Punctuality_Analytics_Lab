@@ -25,7 +25,23 @@ def layout_arrivals_overview():
 
     st.image(ASSETS_PATH / "img" / "Arrivals_v1.png", width='stretch') # TODO: change to arrivals details image
 
-    st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
+    
+
+
+    with st.expander("Click to see information about the page"):
+            st.write(""" **Arrivals Details – Delayed arrivals at Swedish airports**
+            
+This page gives you an overview of arriving flights at Swedish airports, with a focus on delays.
+Use the filters to select airport, date range, airline, time period, travel zone, and departure continent and country
+to dive deeper into the data.
+
+**What you can see:**
+
+- **Key metrics** – total number of arrivals, number of delayed arrivals, share of delayed arrivals (%), and number of on-time arrivals.
+- **Delay distribution** – a pie chart showing how delayed arrivals are distributed across different delay times.
+- **Delays by day of week** – a bar chart showing how the number of delayed arrivals varies across the days of the week.
+
+All data is filterable, so you can easily tailor the view to what you want to explore.""")
 
 
     filtered_df = filter_selectbox("Choose swedish airport", df, "SWEDISH_AIRPORT_NAME")
@@ -90,7 +106,15 @@ def layout_arrivals_overview():
 
 
     with cols2[1]:
-        st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
+        st.info(body="""
+**Delay distribution**
+
+This pie chart shows how the delayed arrivals are distributed across different delay time intervals
+(e.g. 5_to_19 min, 60_to_180 min). 
+
+Flights that arrived on time are excluded, so all slices
+together represent delayed flights for your current filter selection.
+""")
 
 
     with metrics_area:
