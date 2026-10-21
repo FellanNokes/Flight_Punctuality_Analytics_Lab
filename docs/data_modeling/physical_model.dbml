@@ -5,11 +5,14 @@ Table fct_arivals {
   date_id VARCHAR [not null, ref: > dim_date.date_id]
   flight_id VARCHAR(6) [not null] //flight_id
   has_via_destinations BOOL [not null] //arrivals__via_destinations   
-  type_of_flights VARCHAR(1) [not null] //di_indicator , (domestic (D), international (I) or Schengen (S))
+  type_of_flight VARCHAR(1) [not null] //di_indicator , (domestic (D), international (I) or Schengen (S))
   arrival_time_scheduled_utc DATETIME [not null] //arrival_time__schedule_utc
   arrival_time_estimated_utc DATETIME //arrival_time_estimated_utc
   arrival_time_actual_utc DATETIME //arrival_time__actual_utc
   terminal VARCHAR(2) //location_and_status__terminal
+  arrival_delay_minutes INTEGER //arrival_time__scheduled_utc, arrival_time__actual_utc
+  arrival_status VARCHAR //arrival_time__scheduled_utc, arrival_time__actual_utc
+  arrival_delayed_time VARCHAR // arrival_delay_minutes
 }
 
 Table fct_departures {
@@ -24,6 +27,9 @@ Table fct_departures {
   departure_time_estimated_utc DATETIME //departure_time_estimated_utc
   departure_time_actual_utc DATETIME //departure_time__actual_utc
   terminal VARCHAR(2) //location_and_status__terminal
+  departure_delay_minutes INTEGER //departure_time__scheduled_utc, departure_time__actual_utc
+  departure_status VARCHAR //departure_time__scheduled_utc, departure_time__actual_utc
+  departure_delayed_time VARCHAR // departure_delay_minutes
 }
 
 Table dim_airline {
@@ -31,7 +37,7 @@ Table dim_airline {
   airline_name VARCHAR 
   iata_code VARCHAR(2) 
   icao_code VARCHAR(3)
-  country_region VARCHAR
+  country VARCHAR
 }
 
 Table dim_airport {
