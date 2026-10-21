@@ -22,7 +22,7 @@ services:
       - "8501:8501"
     env_file:
       - .env
-    image: crflightpuntuality.azurecr.io/dashboard:v2
+    image: crflightpuntuality.azurecr.io/dashboard:v3
 
 volumes:
   dagster_home:
