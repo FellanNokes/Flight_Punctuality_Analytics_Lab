@@ -23,7 +23,7 @@ def filter_selectbox(label, df, column):
 def layout_arrivals_overview():
     df = load_arrivals()
 
-    st.image(ASSETS_PATH / "img" / "Arrivals_v1.png", width='stretch') # TODO: change to arrivals details image
+    st.image(ASSETS_PATH / "img" / "Arrivals_details_v1.png", width='stretch') # TODO: change to arrivals details image
 
     
 
