@@ -15,7 +15,21 @@ def layout_departures_overview():
 
     st.image(ASSETS_PATH / "img" / "Departures_v1.png", width='stretch')
 
-    st.info(body="The Departure Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
+    with st.expander("Click to see information about the page"):
+        st.write(""" **Departures Overview – Delayed departures at Swedish airports**
+    
+    This page gives you an overview of departing flights at Swedish airports, with a focus on delays.
+    Use the interactive filters to select a specific airport and adjust the date range 
+    to dive deeper into the data.
+    
+    **What you can see:**
+    
+    - **Key metrics** – total number of departures, number of delayed departures, share of delayed departures (%), and number of on-time departures.
+    - **Delay distribution** – a pie chart showing how delayed departures are distributed across different delay times.
+    - **Top 5 delayed airlines** – a bar chart ranking the top 5 airlines with the most delayed departures.
+    
+    All data is filterable, so you can easily tailor the view to what you want to explore.
+    """)
 
     airport_options = ["All airports"] + df["AIRPORT_NAME"].unique().tolist()
 
@@ -80,15 +94,22 @@ def layout_departures_overview():
         if counts.empty:
             st.warning("No delayed flights for the selected airport.")
         else:
-            fig, ax = plt.subplots()
-            pie = ax.pie(counts, labels=arrival_delayed_time_options)
+            fig, ax = plt.subplots(facecolor="#1A1A1A")
+            pie = ax.pie(counts, labels=arrival_delayed_time_options, textprops={'color': 'white'})
             ax.pie_label(pie, counts)
             st.pyplot(fig)
 
 
     with cols2[1]:
-        st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
+        st.info(body="""
+        **Delay distribution**
 
+        This pie chart shows how the delayed departures are distributed across different delay time intervals
+        (e.g. 5_to_19 min, 60_to_180 min). 
+
+        Flights that departuered on time are excluded, so all slices
+        together represent delayed flights for your current filter selection.
+        """)
 
     #top_5_df = df.nlargest(5, "AMOUNT_DELAYED_FLIGHTS_ARRIVALS").set_index(df["AIRLINE_NAME"])
     #top_5_df = df.sort_values(by="AMOUNT_DELAYED_FLIGHTS_ARRIVALS", ascending=False).head(5)

@@ -15,21 +15,47 @@ def layout_arrivals_overview():
 
     st.image(ASSETS_PATH / "img" / "Arrivals_v1.png", width='stretch')
 
-    st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
-
+    with st.expander("Click to see information about the page"):
+        st.write(""" **Arrivals Overview – Delayed arrivals at Swedish airports**
+    
+    This page gives you an overview of arriving flights at Swedish airports, with a focus on delays.
+    Use the interactive filters to select a specific airport and adjust the date range 
+    to dive deeper into the data.
+    
+    **What you can see:**
+    
+    - **Key metrics** – total number of arrivals, number of delayed arrivals, share of delayed arrivals (%), and number of on-time arrivals.
+    - **Delay distribution** – a pie chart showing how delayed arrivals are distributed across different delay times.
+    - **Top 5 delayed airlines** – a bar chart ranking the top 5 airlines with the most delayed arrivals.
+    
+    All data is filterable, so you can easily tailor the view to what you want to explore.
+    """)
+    
     airport_options = ["All airports"] + df["AIRPORT_NAME"].unique().tolist()
 
     selected_airport = st.selectbox(
         label="Choose swedish airport",
         options=airport_options
     )
+    min_date = df["DATE"].min()
+    max_date = df["DATE"].max()
+        
+    selected_dates = st.slider(
+        label="Choose date range",
+        min_value=min_date,
+        max_value=max_date,
+        value=(min_date, max_date)
+        )
 
     if selected_airport == "All airports":
         filtered_df = df
     else:
         filtered_df = df[df["AIRPORT_NAME"] == selected_airport]
 
-    
+    filtered_df = filtered_df[
+        (filtered_df["DATE"] >= selected_dates[0]) & 
+        (filtered_df["DATE"] <= selected_dates[1])
+    ]
     cols = st.columns(4)
 
     with cols[0]:
@@ -45,7 +71,8 @@ def layout_arrivals_overview():
     with cols[2]:
         st.metric(
             label="Delayed arrivals (%)",
-            value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum()
+            value=filtered_df["AMOUNT_DELAYED_FLIGHTS_ARRIVALS"].sum()/filtered_df["AMOUNT_OF_FLIGHTS"].sum(),
+            format="percent"
         )
     with cols[3]:
         st.metric(
@@ -65,15 +92,22 @@ def layout_arrivals_overview():
         if counts.empty:
             st.warning("No delayed flights for the selected airport.")
         else:
-            fig, ax = plt.subplots()
-            pie = ax.pie(counts, labels=arrival_delayed_time_options)
+            fig, ax = plt.subplots(facecolor="#1A1A1A")
+            pie = ax.pie(counts, labels=arrival_delayed_time_options, textprops={'color': 'white'})
             ax.pie_label(pie, counts)
             st.pyplot(fig)
 
 
     with cols2[1]:
-        st.info(body="The Arrivals Overview provides a comprehensive snapshot of flight arrivals, highlighting key metrics and trends.")
+        st.info(body="""
+        **Delay distribution**
 
+        This pie chart shows how the delayed arrivals are distributed across different delay time intervals
+        (e.g. 5_to_19 min, 60_to_180 min). 
+
+        Flights that arrived on time are excluded, so all slices
+        together represent delayed flights for your current filter selection.
+        """)
 
     #top_5_df = df.nlargest(5, "AMOUNT_DELAYED_FLIGHTS_ARRIVALS").set_index(df["AIRLINE_NAME"])
     #top_5_df = df.sort_values(by="AMOUNT_DELAYED_FLIGHTS_ARRIVALS", ascending=False).head(5)
