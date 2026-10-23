@@ -12,7 +12,7 @@ services:
       DAGSTER_HOME: /pipeline/.dagster_home
     volumes:
       - dagster_home:/pipeline/.dagster_home
-    image: crflightpunctuality.azurecr.io/dwh_pipeline:v4
+    image: ${REGISTRY_URL}/dwh_pipeline:v4
 
 
   dashboard:
@@ -23,7 +23,7 @@ services:
       - "8501:8501"
     env_file:
       - .env
-    image: crflightpunctuality.azurecr.io/dashboard:v4
+    image: ${REGISTRY_URL}/dashboard:v4
 
 volumes:
   dagster_home:
