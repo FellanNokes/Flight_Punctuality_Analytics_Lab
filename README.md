@@ -79,8 +79,35 @@ Copy `.env.example` to `.env` in the repo root and fill in the values. It holds:
 | `SNOWFLAKE_USER`, `SNOWFLAKE_PASSWORD`, `SNOWFLAKE_WAREHOUSE`, `SNOWFLAKE_DATABASE`, `SNOWFLAKE_SCHEMA`, `SNOWFLAKE_ROLE` | dashboard (`reporter` user) |
 | `DAGSTER_HOME` | Dagster, absolute path to `.dagster_home` in your clone |
 | `PYTHONLEGACYWINDOWSSTDIO=1` | Windows only, shows print output in the Dagster UI |
+| `REGISTRY_URL` | `docker-compose.yml`, the login server of your Azure Container Registry, e.g. `crflightpunctuality.azurecr.io` |
 
-### 3. Dagster home
+### 3. Local dbt profile
+
+When you run dbt or Dagster locally (not in Docker), dbt reads the profile from your home folder. Open it:
+
+```bash
+code ~/.dbt/profiles.yml
+```
+
+Add the profile below and fill in your Snowflake account and the `transformer` password:
+
+```yaml
+dbt_flights:
+  outputs:
+    dev:
+      account:
+      database: flights
+      password:
+      role: flights_dbt_role
+      schema: flights.warehouse
+      threads: 1
+      type: snowflake
+      user: transformer
+      warehouse: flights_wh
+  target: dev
+```
+
+### 4. Dagster home
 
 Dagster stores run history in `DAGSTER_HOME`. Without it, history is lost on every restart and the Wikipedia data is loaded again.
 
@@ -89,7 +116,14 @@ mkdir .dagster_home
 touch .dagster_home/dagster.yaml
 ```
 
-The folder is in `.gitignore`.
+Add this to `.dagster_home/dagster.yaml`, so only one run executes at a time:
+
+```yaml
+run_queue:
+  max_concurrent_runs: 1
+```
+
+Runs that start at the same time can otherwise break each other, since every run reinstalls the dbt packages. The folder is in `.gitignore`.
 
 ## Run locally
 
@@ -131,12 +165,20 @@ Stop with `docker compose down`. Do **not** add `-v`, it deletes the Dagster his
 
 Both images are stored in the Container Registry `crflightpunctuality.azurecr.io`. The pipeline runs in **Azure Container Apps**, the dashboard in **Azure App Service**.
 
-### 1. Log in to the registry
+### 1. Set the registry and log in
 
-Login details: Azure portal → **Container registries** → `crflightpunctuality` → **Access keys**. Username is the registry name, password is `password` from that page.
+Set `REGISTRY_URL` in `.env` to the **Login server** of your Container Registry (Azure portal → **Container registries** → your registry → **Overview**), without quotes:
+
+```
+REGISTRY_URL=crflightpunctuality.azurecr.io
+```
+
+`docker-compose.yml` uses it in the `image:` lines (`${REGISTRY_URL}/dwh_pipeline:v4`). If it is missing, the image name is invalid and the push fails.
+
+Login details: your registry → **Access keys**. Username is the registry name, password is `password` from that page.
 
 ```bash
-docker login crflightpunctuality.azurecr.io
+docker login <your login server>
 ```
 
 ### 2. Build and push
