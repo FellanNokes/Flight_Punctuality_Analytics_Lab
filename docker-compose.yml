@@ -14,6 +14,7 @@ services:
       - dagster_home:/pipeline/.dagster_home
     image: crflightpunctuality.azurecr.io/dwh_pipeline:v4
 
+
   dashboard:
     build:
       context: .

@@ -22,6 +22,6 @@ RUN uv run dbt deps
 
 # Dagster home, overridden by DAGSTER_HOME in docker-compose
 WORKDIR /pipeline
-RUN mkdir -p .dagster_home && touch .dagster_home/dagster.yaml
+RUN mkdir -p .dagster_home && printf "run_queue:\n  max_concurrent_runs: 1\n" > .dagster_home/dagster.yaml
 
 CMD ["uv", "run", "dagster", "dev", "-f", "orchestration/definitions.py", "-h", "0.0.0.0", "-p", "3000"]
