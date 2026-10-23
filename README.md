@@ -37,7 +37,6 @@ Flight data is loaded from the Swedavia FlightInfo API with **dlt**, modelled in
 | Path | What it is |
 |---|---|
 | `dlt_code/` | dlt sources: `load_flights.py` (Swedavia) and `load_reference.py` (Wikipedia airports and airlines) |
-| `dlt_code/.dlt/config.toml` | Non-secret Snowflake settings for dlt |
 | `dlt_code/worksheet_snowflake/` | SQL to set up warehouse, database, roles and users in Snowflake |
 | `dbt_code/` | dbt project: `src` → `dim` / `fct` (warehouse) → `mart` |
 | `dbt_code/seeds/` | `missing_airports.csv`, Swedish airports missing in the Wikipedia data |
@@ -75,7 +74,7 @@ Copy `.env.example` to `.env` in the repo root and fill in the values. It holds:
 | Variable | Used by |
 |---|---|
 | `SWEDAVIA_API_KEY` | dlt, flights |
-| `DESTINATION__SNOWFLAKE__CREDENTIALS__HOST`, `..._PASSWORD` | dlt (`extract_loader` user) |
+| `DESTINATION__SNOWFLAKE__CREDENTIALS__HOST`, `..._PASSWORD`, `..._DATABASE`, `..._USERNAME`, `..._WAREHOUSE`, `..._ROLE` | dlt (`extract_loader` user) |
 | `SNOWFLAKE_ACCOUNT`, `SNOWFLAKE_USER_TRANSFORMER_PASSWORD` | dbt (`transformer` user) |
 | `SNOWFLAKE_USER`, `SNOWFLAKE_PASSWORD`, `SNOWFLAKE_WAREHOUSE`, `SNOWFLAKE_DATABASE`, `SNOWFLAKE_SCHEMA`, `SNOWFLAKE_ROLE` | dashboard (`reporter` user) |
 | `DAGSTER_HOME` | Dagster, absolute path to `.dagster_home` in your clone |
@@ -94,13 +93,25 @@ The folder is in `.gitignore`.
 
 ## Run locally
 
-From the repo root:
+Run the commands from the repo root.
+
+### Pipeline (Dagster)
 
 ```bash
 uv run dagster dev -f orchestration/definitions.py
 ```
 
 Open http://localhost:3000.
+
+### Dashboard (Streamlit)
+
+```bash
+uv run streamlit run dashboard/Flights.py
+```
+
+Open http://localhost:8501.
+
+The dashboard reads the `reporter` credentials from `.env`. The marts must be built by dbt before the dashboard can show any data. Write the file name with a capital F (`Flights.py`): Windows ignores the case, but Docker and Azure run on Linux, where it matters.
 
 ## Run in Docker
 
@@ -149,12 +160,18 @@ Azure portal → **Container Apps** → **Create**.
   - `SWEDAVIA_API_KEY`
   - `DESTINATION__SNOWFLAKE__CREDENTIALS__HOST`
   - `DESTINATION__SNOWFLAKE__CREDENTIALS__PASSWORD`
+  - `DESTINATION__SNOWFLAKE__CREDENTIALS__DATABASE`
+  - `DESTINATION__SNOWFLAKE__CREDENTIALS__USERNAME`
+  - `DESTINATION__SNOWFLAKE__CREDENTIALS__WAREHOUSE`
+  - `DESTINATION__SNOWFLAKE__CREDENTIALS__ROLE`
   - `SNOWFLAKE_ACCOUNT`
   - `SNOWFLAKE_USER_TRANSFORMER_PASSWORD`
   - `DAGSTER_HOME` = `/pipeline/.dagster_home`
 - **Ingress:** enabled, accepting traffic from anywhere, target port **3000**
 
-**Review + create** → **Create**. Open it from **Overview** → **Application Url**.
+**Review + create** → **Create**. 
+
+Open it from **Overview** → **Application Url**.
 
 **Keep it running:** **Application** → **Scale** → **Min replicas 1** and **Max replicas 1**. Without min 1 the app sleeps and the schedule never fires. Max 1 stops the same schedule from running twice.
 
@@ -174,6 +191,7 @@ Then in the web app:
   | Name | Value |
   |---|---|
   | `WEBSITES_PORT` | `8501` |
+  | `STREAMLIT_SERVER_ADDRESS` | `0.0.0.0` |
   | `SNOWFLAKE_ACCOUNT` | from `.env` |
   | `SNOWFLAKE_USER` | `reporter` |
   | `SNOWFLAKE_PASSWORD` | from `.env` |
@@ -183,7 +201,6 @@ Then in the web app:
   | `SNOWFLAKE_ROLE` | `FLIGHTS_REPORTER_ROLE` |
 
   **Apply** and confirm.
-- **Configuration** → **General settings** → **Web sockets: On** → **Save**
 
 Open it from **Overview** → **Default domain**. The first load can take 20 to 30 seconds.
 
@@ -201,11 +218,11 @@ The pipeline runs in an express environment, so its revision is always called `-
 
 | Problem | Fix |
 |---|---|
-| `SWEDAVIA_API_KEY not found` on Azure | The variable is missing in the container app. Add it and save as a new revision.  |
+| `SWEDAVIA_API_KEY not found` on Azure | The variable is missing in the container app. Add it and save as a new revision. |
+| `config.toml cannot hold secret values` | Snowflake credentials must not be in `dlt_code/.dlt/config.toml`. Remove the `[destination.snowflake.credentials]` block and use the `DESTINATION__SNOWFLAKE__CREDENTIALS__*` environment variables instead. |
 | Swedavia returns 401 | The key has quotes or spaces. In Azure, quotes become part of the value. |
 | Old code still runs after a push | A restart reuses the old image. Use a new tag and save as a new revision. Verify in **Monitoring** → **Console**, e.g. `grep -n "d.date" /pipeline/dbt_code/models/mart/arrivals_filter_mart.sql` |
 | Dashboard gives 503 and stops after ~4 minutes | `WEBSITES_PORT` is missing or misspelled (it has an S). Value must be `8501`. |
-| Dashboard page stays blank or spins | Turn on **Web sockets**. |
 | `uv` fails with `Expected a Python module at src/...` | The project is not a package. Remove `[build-system]` from `pyproject.toml`. |
 | `Failed to spawn: streamlit` in the container | Streamlit is missing in `pyproject.toml`. Run `uv add streamlit` and rebuild. |
 
