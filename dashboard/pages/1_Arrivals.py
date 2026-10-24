@@ -2,6 +2,7 @@ import streamlit as st
 from connect_data_warehouse import query_mart
 from pathlib import Path
 from utils.charts import pie_chart_late
+from utils.filters import pick_airport, pick_date, apply_filters
 
 ASSETS_PATH = Path(__file__).parents[1] / "assets"
 
@@ -30,32 +31,16 @@ def layout_arrivals_overview():
     
     All data is filterable, so you can easily tailor the view to what you want to explore.
     """)
-    
-    airport_options = ["All airports"] + df["AIRPORT_NAME"].unique().tolist()
 
-    selected_airport = st.selectbox(
-        label="Choose swedish airport",
-        options=airport_options
-    )
-    min_date = df["DATE"].min()
-    max_date = df["DATE"].max()
-        
-    selected_dates = st.slider(
-        label="Choose date range",
-        min_value=min_date,
-        max_value=max_date,
-        value=(min_date, max_date)
-        )
+    # Airport selectbox
+    selected_airport = pick_airport(df)
 
-    if selected_airport == "All airports":
-        filtered_df = df
-    else:
-        filtered_df = df[df["AIRPORT_NAME"] == selected_airport]
+    # Date slider
+    selected_dates = pick_date(df)
 
-    filtered_df = filtered_df[
-        (filtered_df["DATE"] >= selected_dates[0]) & 
-        (filtered_df["DATE"] <= selected_dates[1])
-    ]
+    # Apply filters from date and airport
+    filtered_df = apply_filters(df, selected_airport, selected_dates)
+
     cols = st.columns(4)
 
     with cols[0]:
