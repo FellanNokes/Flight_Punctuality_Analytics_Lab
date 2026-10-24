@@ -1,7 +1,7 @@
 import streamlit as st
 from connect_data_warehouse import query_mart
 from pathlib import Path
-import matplotlib.pyplot as plt
+from utils.charts import pie_chart_late
 
 ASSETS_PATH = Path(__file__).parents[1] / "assets"
 
@@ -85,20 +85,7 @@ def layout_departures_overview():
     cols2 = st.columns(2)
 
     with cols2[0]:
-
-        pie_df = filtered_df[filtered_df["DEPARTURE_DELAYED_TIME"] != "On Time"]
-
-        counts = pie_df["DEPARTURE_DELAYED_TIME"].value_counts()
-        arrival_delayed_time_options = pie_df["DEPARTURE_DELAYED_TIME"].unique().tolist()
-
-        if counts.empty:
-            st.warning("No delayed flights for the selected airport.")
-        else:
-            fig, ax = plt.subplots(facecolor="#1A1A1A")
-            pie = ax.pie(counts, labels=arrival_delayed_time_options, textprops={'color': 'white'})
-            ax.pie_label(pie, counts)
-            st.pyplot(fig)
-
+        pie_chart_late(filtered_df,"DEPARTURE_DELAYED_TIME")
 
     with cols2[1]:
         st.info(body="""
