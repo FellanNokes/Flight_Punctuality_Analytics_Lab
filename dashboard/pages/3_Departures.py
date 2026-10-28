@@ -81,9 +81,6 @@ def layout_departures_overview():
         together represent delayed flights for your current filter selection.
         """)
 
-    #top_5_df = df.nlargest(5, "AMOUNT_DELAYED_FLIGHTS_ARRIVALS").set_index(df["AIRLINE_NAME"])
-    #top_5_df = df.sort_values(by="AMOUNT_DELAYED_FLIGHTS_ARRIVALS", ascending=False).head(5)
-
     top_5_df = (
         df.groupby("AIRLINE_NAME", as_index=False)["AMOUNT_DELAYED_FLIGHTS_DEPARTURES"]
         .sum()
